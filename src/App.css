@@ -137,5 +137,44 @@ button.nav-link {
   
   .nav-container {
     justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .nav-logo {
+    left: 0;
+    margin-top: 0;
+  }
+
+  .menu-button {
+    right: 1rem;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+
+  .menu-dropdown {
+    right: 1rem;
+    left: 1rem;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 0 0.5rem;
+  }
+
+  .nav-logo {
+    width: 50px;
+    height: 40px;
+  }
+
+  .menu-button {
+    right: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .menu-dropdown {
+    right: 0.5rem;
+    left: 0.5rem;
   }
 }

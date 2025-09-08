@@ -295,43 +295,126 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .home-container {
+    overflow-x: hidden;
+  }
+
   .career-hero-section {
-    padding: 0 2rem;
+    padding: 2rem 1rem;
+    justify-content: center;
+    text-align: center;
   }
-  
+
+  .career-hero-content {
+    text-align: center;
+    max-width: 100%;
+  }
+
   .career-hero-title {
-    font-size: 60px;
+    font-size: 3rem;
+    line-height: 1.1;
   }
-  
+
+  .career-hero-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .career-apply-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
   .vacancies-section {
-    padding: 4rem 2rem;
+    padding: 3rem 1rem;
   }
-  
+
   .vacancies-title {
-    font-size: 32px;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
-  
+
+  .vacancies-list {
+    padding: 0 1rem;
+  }
+
   .vacancy-title {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
-  
+
+  .vacancy-header {
+    padding: 1rem 0;
+  }
+
+  .footer-section {
+    padding: 3rem 1rem;
+  }
+
   .footer-content {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-column {
+    margin-left: 0;
+  }
+
+  .footer-column h4 {
+    margin-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .footer-column ul li {
+    margin-left: 0;
+  }
+
+  .footer-scroll-top {
+    position: static;
+    margin: 2rem auto 0;
+    width: 80px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .footer-social-icons {
+    position: static;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .footer-shapes {
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
   .career-hero-title {
-    font-size: 48px;
+    font-size: 2.5rem;
+    line-height: 1.1;
   }
   
   .career-hero-description {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
   
   .vacancies-title {
-    font-size: 28px;
+    font-size: 2rem;
+  }
+
+  .vacancy-title {
+    font-size: 1rem;
+  }
+
+  .career-apply-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-main h3 {
+    font-size: 2rem;
   }
 }

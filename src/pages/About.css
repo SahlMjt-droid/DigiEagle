@@ -586,60 +586,174 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
+  .home-container {
+    overflow-x: hidden;
+  }
+
+  /* Hero Section Mobile */
+  .hero-section {
+    min-height: 100vh;
+    padding: 2rem 1rem;
     text-align: center;
   }
-  
+
+  .hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0 auto 2rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
   .hero-phone {
     position: static;
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     margin: 2rem auto;
   }
-  
-  .content-wrapper,
-  .contact-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+
+  .hero-subtitle {
+    justify-content: center;
+    margin-top: 2rem;
   }
-  
-  .process-grid {
-    grid-template-columns: repeat(2, 1fr);
+
+  .arrow-icon {
+    margin-left: 0;
   }
-  
-  .projects-grid,
-  .testimonials-container {
-    flex-direction: column;
-    align-items: center;
+
+  /* Partners Section Mobile */
+  .partners-section {
+    padding: 2rem 1rem;
   }
-  
+
+  .partner-text {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
   .partners-grid {
     flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
   }
-  
-  .footer-content {
-    flex-direction: column;
+
+  .partner-logo {
+    height: 40px;
+  }
+
+  /* Web3 Studio Section Mobile */
+  .web3-studio-section {
+    padding: 3rem 1rem;
+  }
+
+  .content-wrapper {
+    grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .section-description {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .infinity-loop img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .infinity-picture {
+    margin-left: 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .infinity-picture img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  /* Footer Section Mobile */
+  .footer-section {
+    padding: 3rem 1rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-column {
+    margin-left: 0;
+  }
+
+  .footer-column h4 {
+    margin-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .footer-column ul li {
+    margin-left: 0;
+  }
+
+  .footer-scroll-top {
+    position: static;
+    margin: 2rem auto 0;
+    width: 80px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .footer-social-icons {
+    position: static;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .footer-shapes {
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
-  .process-grid {
-    grid-template-columns: 1fr;
-  }
-  
   .hero-title {
     font-size: 2rem;
+    line-height: 1.1;
   }
   
   .section-title {
+    font-size: 1.8rem;
+  }
+
+  .footer-main h3 {
     font-size: 2rem;
   }
-  
-  .contact-title {
-    font-size: 2rem;
+
+  .hero-phone {
+    max-width: 250px;
+  }
+
+  .partner-logo {
+    height: 35px;
   }
 }
