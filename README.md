@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+# DigiEagle - React Web Application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project has been converted from React Native/Expo to a pure React web application that runs only in web browsers.
 
-## Get started
+## Project Structure
 
-1. Install dependencies
+```
+DigiEagle/
+├── public/              # Static assets served by Vite
+│   └── assets/          # Images and other static files
+├── src/                 # Source code
+│   ├── pages/          # Page components (Home, About, Career)
+│   ├── App.tsx         # Main app component with routing
+│   ├── App.css         # App-level styles
+│   ├── main.tsx        # React entry point
+│   └── index.css       # Global styles
+├── index.html          # HTML entry point
+├── vite.config.ts      # Vite configuration
+└── package.json        # Dependencies and scripts
+```
 
+## Technologies Used
+
+- **React 18** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **React Router** - Client-side routing
+- **CSS** - Styling with CSS files
+- **ESLint** - Code linting
+
+## Getting Started
+
+1. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+2. Start the development server:
    ```bash
-   npx expo start
+   npm run dev
    ```
 
-In the output, you'll find options to open the app in a
+3. Open your browser and navigate to the URL shown in the terminal (typically `http://localhost:5173`)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Available Scripts
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-## Get a fresh project
+## Key Changes from React Native
 
-When you're ready, run:
+1. **Components**: Converted from React Native components (`View`, `Text`) to HTML elements (`div`, `span`, etc.)
+2. **Styling**: Replaced React Native StyleSheet with CSS files
+3. **Navigation**: Changed from Expo Router to React Router
+4. **Assets**: Images now served from `public/assets/` directory
+5. **Build System**: Using Vite instead of Expo CLI
+6. **Platform**: Web-only, no mobile app compilation
 
-```bash
-npm run reset-project
-```
+## Features
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- ✅ Responsive web design
+- ✅ Light/dark mode support
+- ✅ TypeScript for type safety
+- ✅ Modern React hooks
+- ✅ Client-side routing
+- ✅ Fast development with Vite
+- ✅ ESLint for code quality
 
-## Learn more
+## Browser Support
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This application runs in all modern web browsers and is responsive for both desktop and mobile viewing.
