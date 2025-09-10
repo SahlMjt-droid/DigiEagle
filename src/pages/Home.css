@@ -1170,7 +1170,7 @@
 
   .infinity-loop img {
     width: 100% !important;
-    max-width: 300px !important;
+    max-width: 150px !important;
     height: auto !important;
     margin-right: 0 !important;
   }
@@ -1318,9 +1318,9 @@
   }
 
   .process-image img {
-    width: 100% !important;
+    width: 150% !important;
     max-width: 100% !important;
-    height: auto !important;
+    height: 150% !important;
     margin-left: 0 !important;
     display: block !important;
     margin: 0 auto !important;
