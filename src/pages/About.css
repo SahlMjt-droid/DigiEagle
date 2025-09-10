@@ -946,10 +946,13 @@
     position: static !important;
     left: 0 !important;
     transform: none !important;
+    display: block !important;
+    text-align: center !important;
   }
 
   .process-image img {
     width: 100% !important;
+    max-width: 100% !important;
     height: auto !important;
     object-fit: contain !important;
     display: block !important;
