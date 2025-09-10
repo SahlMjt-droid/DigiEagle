@@ -323,6 +323,131 @@
     width: 100%;
   }
 
+  /* Career Hero Section Mobile Fixes */
+  .career-hero-section {
+    min-height: 70vh !important;
+    padding: 2rem 1rem !important;
+    text-align: center !important;
+  }
+
+  .career-hero-content {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .career-hero-title {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+    margin: 0 auto 2rem !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .career-hero-description {
+    font-size: 1.2rem !important;
+    line-height: 1.6 !important;
+    margin: 0 auto 2rem !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Why Work Section Mobile Fixes */
+  .why-work-section {
+    padding: 3rem 1rem !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+
+  .why-work-title {
+    font-size: 2rem !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .why-work-list {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    text-align: left !important;
+  }
+
+  .why-work-list li {
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Sample Roles Section Mobile Fixes */
+  .sample-roles-section {
+    padding: 3rem 1rem !important;
+    text-align: center !important;
+  }
+
+  .sample-roles-title {
+    font-size: 2rem !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .roles-list {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .role-item {
+    margin-bottom: 1rem !important;
+  }
+
+  .role-title {
+    font-size: 1.2rem !important;
+  }
+
+  .role-content {
+    font-size: 1rem !important;
+  }
+
+  /* Apply Section Mobile Fixes */
+  .apply-section {
+    padding: 3rem 1rem !important;
+    text-align: center !important;
+  }
+
+  .apply-title {
+    font-size: 2rem !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .apply-text {
+    font-size: 1.2rem !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+  }
+
+  .apply-email {
+    font-size: 1.2rem !important;
+  }
+
+  /* Tagline Section Mobile Fixes */
+  .tagline-section {
+    padding: 3rem 1rem !important;
+    text-align: center !important;
+  }
+
+  .final-tagline {
+    font-size: 1.2rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+  }
+
   .career-hero-section {
     padding: 2rem 1rem;
     justify-content: center;
@@ -559,12 +684,48 @@
 
 @media (max-width: 480px) {
   .career-hero-title {
-    font-size: 2.5rem;
-    line-height: 1.1;
+    font-size: 1.8rem !important;
+    line-height: 1.1 !important;
   }
   
   .career-hero-description {
-    font-size: 0.9rem;
+    font-size: 1rem !important;
+  }
+
+  .why-work-title {
+    font-size: 1.5rem !important;
+  }
+
+  .why-work-list li {
+    font-size: 1rem !important;
+  }
+
+  .sample-roles-title {
+    font-size: 1.5rem !important;
+  }
+
+  .role-title {
+    font-size: 1.1rem !important;
+  }
+
+  .role-content {
+    font-size: 0.9rem !important;
+  }
+
+  .apply-title {
+    font-size: 1.5rem !important;
+  }
+
+  .apply-text {
+    font-size: 1rem !important;
+  }
+
+  .apply-email {
+    font-size: 1rem !important;
+  }
+
+  .final-tagline {
+    font-size: 1rem !important;
   }
   
   .vacancies-title {

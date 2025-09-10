@@ -332,6 +332,93 @@
     width: 100%;
   }
 
+  /* Contact Section Mobile Fixes */
+  .contact-section {
+    padding: 3rem 1rem !important;
+  }
+
+  .contact-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+  }
+
+  .contact-title1 {
+    font-size: 1.8rem !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .contact-title2 {
+    font-size: 1.5rem !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .contact-form {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1.5rem !important;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 16px !important;
+    padding: 0.8rem !important;
+  }
+
+  .submit-button {
+    width: 100% !important;
+    padding: 0.8rem 1rem !important;
+    font-size: 1rem !important;
+  }
+
+  .contact-card {
+    max-width: 100% !important;
+    padding: 1.5rem !important;
+  }
+
+  .contact-card h3 {
+    margin-left: 0 !important;
+    text-align: center !important;
+    font-size: 1.2rem !important;
+  }
+
+  .contact-item {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 0.5rem !important;
+  }
+
+  .contact-icon {
+    margin-left: 0 !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .social-links-text {
+    margin-left: 0 !important;
+    text-align: center !important;
+    font-size: 1.5rem !important;
+  }
+
+  .social-links {
+    justify-content: center !important;
+    margin-left: 0 !important;
+    gap: 1rem !important;
+  }
+
+  .social-link img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
   .contact-section {
     padding: 3rem 1rem;
   }
@@ -421,9 +508,40 @@
     max-width: 100vw;
   }
 
-  .contact-title1,
+  .contact-title1 {
+    font-size: 1.5rem !important;
+  }
+
   .contact-title2 {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
+  }
+
+  .contact-card h3 {
+    font-size: 1rem !important;
+  }
+
+  .contact-item {
+    font-size: 0.9rem !important;
+  }
+
+  .social-links-text {
+    font-size: 1.2rem !important;
+  }
+
+  .social-link img {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 16px !important;
+    padding: 0.6rem !important;
+  }
+
+  .submit-button {
+    padding: 0.6rem 0.8rem !important;
+    font-size: 0.9rem !important;
   }
 
   .footer-main h3 {

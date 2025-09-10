@@ -133,38 +133,59 @@ button.nav-link {
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav {
-    padding: 0.25rem 0;
-    min-height: 50px;
+    padding: 0.25rem 0 !important;
+    min-height: 50px !important;
   }
 
   .nav-container {
-    padding: 0 0.5rem;
-    height: 50px;
+    padding: 0 0.5rem !important;
+    height: 50px !important;
   }
 
   .nav-links {
-    display: none;
+    display: none !important;
   }
 
   .nav-logo {
-    width: 40px;
-    height: 30px;
+    width: 40px !important;
+    height: 30px !important;
   }
 
   .menu-button {
-    font-size: 18px;
-    padding: 0.25rem;
+    font-size: 18px !important;
+    padding: 0.25rem !important;
+    background: none !important;
+    border: none !important;
+    color: white !important;
+    cursor: pointer !important;
   }
 
   .menu-dropdown {
-    right: 0.5rem;
-    left: 0.5rem;
-    min-width: auto;
-    top: 100%;
+    right: 0.5rem !important;
+    left: 0.5rem !important;
+    min-width: auto !important;
+    top: 100% !important;
+    background: #000 !important;
+    border: 1px solid #333 !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    z-index: 1000 !important;
+  }
+
+  .menu-link {
+    display: block !important;
+    padding: 0.5rem 0 !important;
+    color: white !important;
+    text-decoration: none !important;
+    border: none !important;
+    background: none !important;
+    width: 100% !important;
+    text-align: left !important;
+    cursor: pointer !important;
   }
 
   .main-content {
-    margin-top: 50px;
+    margin-top: 50px !important;
   }
 }
 
@@ -180,21 +201,27 @@ button.nav-link {
   }
 
   .nav-logo {
-    width: 35px;
-    height: 25px;
+    width: 30px !important;
+    height: 20px !important;
   }
 
   .menu-button {
-    font-size: 16px;
-    padding: 0.25rem;
+    font-size: 14px !important;
+    padding: 0.25rem !important;
   }
 
   .menu-dropdown {
-    right: 0.25rem;
-    left: 0.25rem;
+    right: 0.25rem !important;
+    left: 0.25rem !important;
+    padding: 0.5rem !important;
+  }
+
+  .menu-link {
+    padding: 0.25rem 0 !important;
+    font-size: 0.9rem !important;
   }
 
   .main-content {
-    margin-top: 45px;
+    margin-top: 45px !important;
   }
 }

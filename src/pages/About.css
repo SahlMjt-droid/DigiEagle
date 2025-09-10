@@ -711,6 +711,284 @@
     width: 100%;
   }
 
+  /* About Us Section Mobile Fixes */
+  .web3-studio-section {
+    padding: 3rem 1rem !important;
+    margin-top: 0 !important;
+  }
+
+  .mission-section {
+    margin: 0 auto 2rem !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+  }
+
+  .mission-title {
+    font-size: 1.8rem !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .mission-text {
+    font-size: 1.2rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .why-choose-section {
+    margin: 0 auto 2rem !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+  }
+
+  .why-choose-title {
+    font-size: 1.8rem !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .why-choose-list {
+    text-align: left !important;
+    max-width: 100% !important;
+  }
+
+  .why-choose-list li {
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .content-wrapper {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    flex-direction: column !important;
+    max-width: 100% !important;
+  }
+
+  .section-title11 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+    margin: 0 auto 2rem !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .about-headline {
+    font-size: 1.5rem !important;
+    margin: 0 auto 2rem !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .about-description {
+    font-size: 1.2rem !important;
+    line-height: 1.6 !important;
+    margin: 0 auto 2rem !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .mission-section {
+    margin: 0 auto 2rem !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+  }
+
+  .mission-title {
+    font-size: 1.8rem !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .mission-text {
+    font-size: 1.2rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .why-choose-section {
+    margin: 0 auto 2rem !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+  }
+
+  .why-choose-title {
+    font-size: 1.8rem !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .why-choose-list {
+    text-align: left !important;
+    max-width: 100% !important;
+  }
+
+  .why-choose-list li {
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Services Section Mobile Fixes */
+  .service-section {
+    margin-left: 0 !important;
+    padding: 3rem 1rem !important;
+    text-align: center !important;
+  }
+
+  .section-title1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 2rem !important;
+    margin-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .services-preview-content {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    margin-top: 2rem !important;
+    margin-left: 0 !important;
+  }
+
+  .services-preview-content1 {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    margin-top: 2rem !important;
+    margin-left: 0 !important;
+  }
+
+  .service-item {
+    padding: 1.5rem !important;
+  }
+
+  .service-item h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .service-item p {
+    font-size: 0.9rem !important;
+  }
+
+  /* Portfolio Section Mobile Fixes */
+  .projects-section {
+    padding: 3rem 1rem !important;
+    margin-top: 0 !important;
+  }
+
+  .section-title3 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+    margin-left: 0 !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .portfolio-description {
+    font-size: 1rem !important;
+    margin: 1.5rem auto 0 !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+  }
+
+  .portfolio-list {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+  }
+
+  .portfolio-item {
+    padding: 1.5rem !important;
+  }
+
+  .portfolio-item:last-child {
+    grid-column: 1 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .portfolio-title {
+    font-size: 1.2rem !important;
+  }
+
+  .portfolio-description-item {
+    font-size: 1rem !important;
+  }
+
+  /* Process Image Mobile Fixes */
+  .process-image {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    margin-left: 0 !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+    position: static !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+
+  .process-image img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* Override negative margins for mobile */
+  .section-title11 {
+    margin-top: 0 !important;
+  }
+
+  .infinity-loop img {
+    margin-right: 0 !important;
+  }
+
+  .infinity-picture img {
+    margin-right: 0 !important;
+  }
+
+  .section-title {
+    margin-right: 0 !important;
+  }
+
+  .section-description {
+    margin-right: 0 !important;
+  }
+
+  .section-title1 {
+    margin-left: 0 !important;
+  }
+
+  .service-card1 {
+    margin-top: 0 !important;
+  }
+
+  .process-image {
+    margin-left: 0 !important;
+  }
+
   /* Hero Section Mobile */
   .hero-section {
     min-height: 100vh;
@@ -857,13 +1135,56 @@
 }
 
 @media (max-width: 480px) {
-  .hero-title {
-    font-size: 2rem;
-    line-height: 1.1;
+  .section-title11 {
+    font-size: 1.8rem !important;
   }
-  
-  .section-title {
-    font-size: 1.8rem;
+
+  .section-title1 {
+    font-size: 1.8rem !important;
+  }
+
+  .section-title3 {
+    font-size: 1.8rem !important;
+  }
+
+  .about-headline {
+    font-size: 1.2rem !important;
+  }
+
+  .about-description {
+    font-size: 1rem !important;
+  }
+
+  .mission-title {
+    font-size: 1.5rem !important;
+  }
+
+  .mission-text {
+    font-size: 1rem !important;
+  }
+
+  .why-choose-title {
+    font-size: 1.5rem !important;
+  }
+
+  .why-choose-list li {
+    font-size: 1rem !important;
+  }
+
+  .service-item h3 {
+    font-size: 1rem !important;
+  }
+
+  .service-item p {
+    font-size: 0.85rem !important;
+  }
+
+  .portfolio-title {
+    font-size: 1.1rem !important;
+  }
+
+  .portfolio-description-item {
+    font-size: 0.9rem !important;
   }
 
   .footer-main h3 {
