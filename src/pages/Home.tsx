@@ -1,10 +1,16 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
 export default function Home() {
+  const navigate = useNavigate();
   const [currentProject, setCurrentProject] = useState(0);
   const totalProjects = 3;
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [currentTestimonial, setCurrentTestimonial] = useState(1);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const nextProject = () => {
     setCurrentProject((prev) => (prev + 1) % totalProjects);
@@ -50,21 +56,38 @@ export default function Home() {
       <section className="hero-section">
         <div className="hero-content">
           <h1 className="hero-title">
-            Design studio<br />
-              for the<br />
-            <span className="highlight">web3 world</span>
+            <span className="highlight">Your Trusted<br />
+            Partner for <br />
+               Digital <br />
+               Transformation.</span>
           </h1>
           
           <div className="hero-phone">
-           
-            <img src="/assets/images/hero-phone.png" /> 
+            <img src="/assets/images/hero-phone.png" alt="Phone" /> 
           </div>
-
 
           <div className="hero-subtitle">
             <span className="arrow-icon" style={{ transform: 'rotate(90deg)' }}>→</span>
-            We help companies design their<br />
-            products to be ready for web3 world
+            From startups to enterprises, we deliver secure, scalable, and
+            innovative digital solutions that transform challenges into measurable success.
+          </div>
+
+          <div className="hero-buttons">
+            <button className="hero-btn primary" onClick={() => navigate('/contact')}>Start Your Project</button>
+            <button className="hero-btn secondary" onClick={() => {
+              const portfolioSection = document.getElementById('portfolio');
+              if (portfolioSection) {
+                portfolioSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}>See Our Work</button>
+          </div>
+
+          <div className="trust-line">
+            <span>Trusted by businesses worldwide</span>
+            <span>•</span>
+            <span>100% commitment to project delivery</span>
+            <span>•</span>
+            <span>Experts in Software, AI & IT Solutions</span>
           </div>
         </div>
       </section>
@@ -78,6 +101,16 @@ export default function Home() {
           <img src="/assets/images/logo-coinbase.png" alt="Coinbase" className="partner-logo2" />
           <img src="/assets/images/logo-aloz.png" alt="Aloz" className="partner-logo3" />
           <img src="/assets/images/logo-blockchain.png" alt="Blockchain" className="partner-logo4" />
+        </div>
+      </section>
+
+      {/* About Preview Section */}
+      <section className="about-preview-section">
+        <div className="about-preview-content">
+          <h2 className="about-preview-title">About Zova Digitech</h2>
+          <p className="about-preview-text">
+            Zova Digitech is more than a software house — we are the trusted engine powering businesses to grow faster, smarter, and stronger in the digital world. With a global team of experts, we combine innovation and reliability to create results you can depend on.
+          </p>
         </div>
       </section>
 
@@ -106,27 +139,39 @@ export default function Home() {
 
       {/* Our Services Section */}
       <section className="service-section">
-        <h2 className="section-title1">The Services we provide <br />
-          for you</h2>
-        <div className="service-grid">
-          <div className="service-card">
-            <img src="/assets/images/service-1.png" alt="Service 1" />
-            <img src="/assets/images/service-2.png" alt="Service 2" />
-            <img src="/assets/images/service-3.png" alt="Service 3" />
+        <h2 className="section-title1">Services Preview</h2>
+        <div className="services-preview-content">
+          <div className="service-item">
+            <h3>Web & Software Development</h3>
+            <p>Secure, scalable, and built for your business.</p>
           </div>
-        </div>
-        <div className="service-grid">
-          <div className="service-card1">
-            <img src="/assets/images/service-4.png" alt="Service 4" />
-            <img src="/assets/images/service-5.png" alt="Service 5" />
-            <img src="/assets/images/service-6.png" alt="Service 6" />
+          <div className="service-item">
+            <h3>Mobile Apps (iOS & Android)</h3>
+            <p>Future-ready apps that connect you with customers worldwide.</p>
           </div>
-        </div>
+          <div className="service-item">
+            <h3>E-commerce Solutions</h3>
+            <p>Online stores designed to grow your brand and boost sales.</p>
+          </div>
+          </div>
+          <div className="services-preview-content1">
+        
+        <div className="service-item">
+            <h3>AI & Data Science</h3>
+            <p>Turning data into decisions with intelligent, trustworthy solutions.</p>
+          </div>
+          <div className="service-item">
+            <h3>IT Consultancy</h3>
+            <p>Strategies and technology you can depend on.</p>
+          </div>
+          
+          </div>
       </section>
 
-      {/* Our Projects Section */}
-      <section className="projects-section">
-        <h2 className="section-title3">Our Projects</h2>
+      {/* Portfolio Preview Section */}
+      <section id="portfolio" className="projects-section">
+        <h2 className="section-title3">Portfolio </h2>
+        <p className="portfolio-preview-text">From business websites to advanced AI platforms, we've delivered projects that drive measurable growth. Explore how we turn ideas into digital reality.</p>
         <div className="projects-grid">
           <div className={`project-card ${currentProject === 0 ? 'active' : ''}`}>
             <img src="/assets/images/project-1.png" alt="Project 1" />
@@ -179,56 +224,24 @@ export default function Home() {
        </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="contact-section">
-        <div className="contact-container">
-        <h2 className="contact-title1"> \ Get In Touch \</h2>
-          <h2 className="contact-title2"> Hey! Let's Talk</h2>
-          <div className="contact-content">
-            <div className="contact-form">
-              <form>
-                <input type="text" placeholder="Name" className="form-input" />
-                <input type="email" placeholder="Email" className="form-input" />
-                <input type="text" placeholder="Phone" className="form-input" />
-                <textarea placeholder="Your Message" className="form-textarea"></textarea>
-                <button type="submit" className="submit-button">Send Now</button>
-              </form>
-            </div>
-            <div className="contact-info">
-              <div className="contact-card">
-                <h3>Call Anytime</h3>
-                
-                
-                <div className="contact-item">
-                  <span className="contact-icon"><img src="/assets/images/phone.png" alt="Email" /></span>
-                  <span>+ 91 23678 27867<br />
-                  + 91 67678 92878</span>
-                </div>
-                <h3>Send Email</h3>
-                <div className="contact-item">
-                  <span className="contact-icon"><img src="/assets/images/em.png" alt="Phone" /></span>
-                  <span>connect@itfirms.com<br />
-                  hello@itfirms.com</span>
-                </div>
-                <h3>Visit Us</h3>
-                <div className="contact-item">
-                  <span className="contact-icon"><img src="/assets/images/loc.png" alt="Location" /></span>
-                  <span>20 Island Park Road,<br />
-                  New Jersey, New York, USA</span>
-                </div>
-                <div className="social-links-text">Follow Us</div>
-                <div className="social-links">
-          
-                  <a href="#" className="social-link"><img src="/assets/images/lin.png" alt="Facebook" /></a>  
-                  <a href="#" className="social-link"><img src="/assets/images/int.png" alt="Twitter" /></a>
-                  <a href="#" className="social-link"><img src="/assets/images/fb.png" alt="Instagram" /></a>
-                  <a href="#" className="social-link"><img src="/assets/images/twit.png" alt="LinkedIn" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Careers Preview Section */}
+      <section className="careers-preview-section">
+        <div className="careers-preview-content">
+          <h2 className="careers-preview-title">Careers Preview</h2>
+          <p className="careers-preview-text">
+            Talent knows no borders at Zova Digitech. Join our global team of innovators and help us build technology that shapes the future.
+          </p>
         </div>
       </section>
+
+      {/* Call-to-Action Section */}
+      <section className="cta-section">
+        <div className="cta-content">
+          <h2 className="cta-title">Let's turn your idea into a digital success story.</h2>
+          <button className="cta-button" onClick={() => navigate('/contact')}>Contact Us Today</button>
+        </div>
+      </section>
+
 
       {/* Testimonials Section */}
       <section className="testimonials-section">
@@ -337,10 +350,10 @@ export default function Home() {
           <div className="footer-column">
             <h4>Follow us</h4>
             <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Dribbble</a></li>
-              <li><a href="#">LinkedIn</a></li>
+              <li><a href="https://www.facebook.com/zovadigitech/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+              <li><a href="https://www.instagram.com/zovadigitech/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://www.tiktok.com/@eagleigroup" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+              <li><a href="https://www.linkedin.com/company/zovadigitech/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
           </div>
         </div>

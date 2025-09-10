@@ -7,32 +7,33 @@
 }
 
 .nav {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(10px);
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+  min-height: 60px;
 }
 
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
-  left: -70px;
+  height: 50px;
 }
 
 .nav-logo {
-  width: 60px;
-  height: 50px;
-  position: absolute;
-  left: -60px;
-  margin-top: 20px;
+  width: 50px;
+  height: 40px;
+  position: relative;
+  left: 0;
+  margin-top: 0;
 }
 
 .nav-logo img {
@@ -55,6 +56,7 @@
   transition: all 0.3s ease;
   font-weight: 350;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .nav-link:hover {
@@ -75,15 +77,14 @@ button.nav-link {
   background: none;
   border: none;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 100;
   cursor: pointer;
   padding: 0.5rem;
-  position: absolute;
+  position: relative;
   right: 0;
-  top: 30%;
-  transform: translateY(-100%);
-  transform: translateX(280%);
+  top: 0;
+  transform: none;
 }
 
 .menu-dropdown {
@@ -124,57 +125,76 @@ button.nav-link {
 }
 
 .main-content {
-  margin-top: 80px; /* Account for fixed nav */
+  margin-top: 60px; /* Account for fixed nav */
   width: 100%;
   padding: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .nav {
+    padding: 0.25rem 0;
+    min-height: 50px;
+  }
+
+  .nav-container {
+    padding: 0 0.5rem;
+    height: 50px;
+  }
+
   .nav-links {
     display: none;
   }
-  
-  .nav-container {
-    justify-content: space-between;
-    padding: 0 1rem;
-  }
 
   .nav-logo {
-    left: 0;
-    margin-top: 0;
+    width: 40px;
+    height: 30px;
   }
 
   .menu-button {
-    right: 1rem;
-    font-size: 1.2rem;
-    padding: 0.3rem;
-  }
-
-  .menu-dropdown {
-    right: 1rem;
-    left: 1rem;
-    min-width: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-container {
-    padding: 0 0.5rem;
-  }
-
-  .nav-logo {
-    width: 50px;
-    height: 40px;
-  }
-
-  .menu-button {
-    right: 0.5rem;
-    font-size: 1rem;
+    font-size: 18px;
+    padding: 0.25rem;
   }
 
   .menu-dropdown {
     right: 0.5rem;
     left: 0.5rem;
+    min-width: auto;
+    top: 100%;
+  }
+
+  .main-content {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 0.25rem 0;
+    min-height: 45px;
+  }
+
+  .nav-container {
+    padding: 0 0.25rem;
+    height: 45px;
+  }
+
+  .nav-logo {
+    width: 35px;
+    height: 25px;
+  }
+
+  .menu-button {
+    font-size: 16px;
+    padding: 0.25rem;
+  }
+
+  .menu-dropdown {
+    right: 0.25rem;
+    left: 0.25rem;
+  }
+
+  .main-content {
+    margin-top: 45px;
   }
 }

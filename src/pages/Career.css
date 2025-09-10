@@ -22,103 +22,124 @@
 }
 
 .career-hero-title {
-  font-size: 100px;
+  font-size: 70px;
   font-weight: 700;
-  line-height: 0.9;
   margin-bottom: 8rem;
   color: white;
   text-align: left;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin-left: 150px; 
+  margin-top: -30px;
+}
+.career-hero-title .highlight {
+  background: linear-gradient(45deg, #fefefe, #fefefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
 }
 
 .career-hero-description {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 1000;
   line-height: 1.4;
-  color: white;
+  color: #888;
   margin-bottom: 8rem;
   text-align: left;
   letter-spacing: 1px;
  margin-right: -100px;
   margin-top: 100px;
   margin-left: 150px;
+  font-style: italic;
+  font-family: 'monospace';
 }
 
-.career-apply-button {
-  background: white;
-  color: black;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 18px;
+.why-work-section {
+  margin-left: 0;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: 500px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.why-work-title {
+  font-size: 2.5rem;
   font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 4px;
-  margin-left: 370px;
-  margin-bottom: 150px;
-}
-
-.career-apply-button:hover {
-  background: #f0f0f0;
-}
-
-/* Vacancies Section */
-.vacancies-section {
-  padding: 6rem 4rem;
-  background: #000000;
-}
-
-.vacancies-title {
-  font-size: 70px;
-  font-weight: 700;
-  color: white;
-  margin-bottom: 7rem;
+  color: #fff;
+  margin-bottom: 3rem;
+  font-family: 'Poppins';
   text-align: center;
+  font-style: italic;
 }
 
-.vacancies-list {
+.why-work-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.why-work-list li {
+  font-size: 1.9rem;
+  color: #888;
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-style: italic;
+}
+
+  .why-work-list li::before {
+  content: "•";
+  color: #00ff8868 !important;
+  font-weight: bold !important;
+  position: absolute;
+  left: 0;
+}
+
+.apply-section {
+  margin-left: 50px;
+  margin-right: 100px;
+  margin-top: 60px !important;
+  margin-bottom: 100px;
+}
+
+.apply-title {
+  font-size: 70px !important;
+  color: #888;
+  margin-bottom: 4rem !important;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.apply-text {
+  font-size: 1.5rem !important;
+  color: #888;
+  line-height: 1.9 !important;
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.apply-email {
+  color: #00ff8841;
+  text-decoration: none;
+  font-weight: 600;
+}
+.apply-email:hover {
+  text-decoration: underline;
+}
+
+.final-tagline {
+  font-size: 1.8rem !important;
+  color: #888 !important;
+  font-style: italic !important;
   max-width: 800px;
   margin: 0 auto;
+  font-family: 'monospace' !important;
+  line-height: 1.6 !important;
 }
 
-.vacancy-item {
-  border-bottom: 1px solid #333;
-  margin-bottom: 0;
-}
-
-.vacancy-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 0;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.vacancy-header:hover {
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.vacancy-title {
-  font-size: 30px;
-  font-weight: 700;
-  color: white;
-  margin: 0;
-  text-align: left;
-}
-
-.vacancy-toggle {
-  font-size: 60px;
-  font-weight: 300;
-  color: white;
-  transition: transform 0.3s ease;
-}
-
-.vacancy-content {
-  padding: 0 0 2rem 0;
-  color: #888;
-  font-size: 16px;
-  line-height: 1.6;
-}
 
 /* Footer Section */
 .footer-section {
@@ -297,6 +318,9 @@
 @media (max-width: 768px) {
   .home-container {
     overflow-x: hidden;
+    min-width: 320px;
+    max-width: 100vw;
+    width: 100%;
   }
 
   .career-hero-section {
@@ -320,10 +344,6 @@
     margin-bottom: 2rem;
   }
 
-  .career-apply-button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
 
   .vacancies-section {
     padding: 3rem 1rem;
@@ -391,6 +411,152 @@
   }
 }
 
+/* Why Work With Us Section */
+.why-work-section {
+  padding: 4rem 0;
+  background: #000000;
+  text-align: center;
+}
+
+.why-work-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.why-work-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.why-work-list li {
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.why-work-list li::before {
+  content: "•";
+  color: #00ff88;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Sample Roles Section */
+.sample-roles-section {
+  padding: 6rem 0;
+  background: #000000;
+  text-align: center;
+}
+
+.sample-roles-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.roles-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.role-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.role-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.role-toggle {
+  font-size: 1.5rem;
+  color: #00ff88;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.role-content {
+  padding: 0 2rem 1.5rem;
+  color: #888;
+  line-height: 1.6;
+}
+
+/* Apply Section */
+.apply-section {
+  padding: 4rem 0;
+  background: #000000;
+  text-align: center;
+}
+
+.apply-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.apply-text {
+  font-size: 1.2rem;
+  color: #888;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.apply-email {
+  color: #00ff88;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.apply-email:hover {
+  text-decoration: underline;
+}
+
+/* Tagline Section */
+.tagline-section {
+  padding: 4rem 0;
+  background: #000000;
+  text-align: center;
+}
+
+.final-tagline {
+  font-size: 1.5rem;
+  color: #00ff88;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 @media (max-width: 480px) {
   .career-hero-title {
     font-size: 2.5rem;
@@ -409,10 +575,6 @@
     font-size: 1rem;
   }
 
-  .career-apply-button {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
-  }
 
   .footer-main h3 {
     font-size: 2rem;

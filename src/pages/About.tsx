@@ -1,18 +1,10 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import './About.css';
 
 export default function About() {
-  const [currentProject, setCurrentProject] = useState(0);
-  const totalProjects = 3;
-
-  const nextProject = () => {
-    setCurrentProject((prev) => (prev + 1) % totalProjects);
-  };
-
-  const prevProject = () => {
-    setCurrentProject((prev) => (prev - 1 + totalProjects) % totalProjects);
-  };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -27,100 +19,84 @@ export default function About() {
 <section className="web3-studio-section">
   <div className="content-wrapper">
     <div className="text-content">
-      <h2 className="section-title11">About Us </h2>
+      <h2 className="section-title11">Building Trust Through Technology</h2>  
+      <p className="about-description">
+        " Zova Digitech is a global software company dedicated to delivering innovative, scalable, and reliable digital solutions.<br />
+         We don't just write code — we solve problems, build partnerships, and help businesses succeed in the digital age. "
+      </p>
+      <div className="mission-section">
+        <h4 className="mission-title">Mission:</h4>
+        <p className="mission-text">"To empower businesses worldwide with secure, scalable, and innovative technology that drives growth and builds trust."</p>
+      </div>
+      <div className="why-choose-section">
+        <h4 className="why-choose-title">Why Choose Us:</h4>
+        <ul className="why-choose-list">
+          <li>Global reach with local reliability</li>
+          <li>Secure and scalable technology</li>
+          <li>Long-term partnerships, not one-off projects</li>
+          <li>Future-ready solutions (AI, automation, and beyond)</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
 
-      {/* What is Web3 Studio Section */}
-      <section className="web3-studio-section">
-        <div className="content-wrapper">
-          <div className="text-content">
-         
-            <h2 className="section-title">What is Web3 studio?</h2>
-            <p className="section-description">
-            Things around crypto, NFTs and web3 as a whole are <br />
-            unbelievably interesting. Unfortunately, the overall usability <br />
-             as well as the quality of the UI is often still not up to the <br />
-              task. To achieve mass adoption, overcoming those hurdles <br />
-              will be key. And this is where our story begins.
-            </p>
-          </div>
-          <div className="infinity-loop">
-            <img src="/assets/images/div.png" alt="CoinTelligence" className="partner-logo" />
-          </div>
-        </div>
-        <div className="infinity-picture">
-        <img src="/assets/images/div (1).png" />
-        </div>
 
-      </section>
 
       {/* Our Services Section */}
       <section className="service-section">
-        <h2 className="section-title1">The Services we provide <br />
-          for you</h2>
-        <div className="service-grid">
-          <div className="service-card">
-            <img src="/assets/images/service-1.png" alt="Service 1" />
-            <img src="/assets/images/service-2.png" alt="Service 2" />
-            <img src="/assets/images/service-3.png" alt="Service 3" />
+        <h2 className="section-title1">Services Preview</h2>
+        <div className="services-preview-content">
+          <div className="service-item">
+            <h3>Web & Software Development</h3>
+            <p>From business websites to complex platforms, we build secure and scalable software tailored to your needs.</p>
           </div>
-        </div>
-        <div className="service-grid">
-          <div className="service-card1">
-            <img src="/assets/images/service-4.png" alt="Service 4" />
-            <img src="/assets/images/service-5.png" alt="Service 5" />
-            <img src="/assets/images/service-6.png" alt="Service 6" />
+          <div className="service-item">
+            <h3>Mobile Apps (iOS & Android)</h3>
+            <p>Future-ready mobile apps for iOS and Android that keep your business connected, anywhere in the world.</p>
           </div>
-        </div>
+          <div className="service-item">
+            <h3>E-commerce Solutions</h3>
+            <p>Powerful online stores on Shopify, WooCommerce, or custom builds — designed to grow your brand and boost sales.</p>
+          </div>
+          </div>
+          <div className="services-preview-content1">
+        
+        <div className="service-item">
+            <h3>AI & Data Science</h3>
+            <p>Turning data into decisions — we design intelligent AI systems and analytics dashboards that deliver real business impact.</p>
+          </div>
+          <div className="service-item">
+            <h3>IT Consultancy</h3>
+            <p>Your digital growth partner — helping you choose the right strategy, technology, and tools for success.</p>
+          </div>
+          
+          </div>
       </section>
 
-      {/* Our Projects Section */}
+      {/* Portfolio / Case Studies Section */}
       <section className="projects-section">
-        <h2 className="section-title3">Our Projects</h2>
-        <div className="projects-grid">
-          <div className={`project-card ${currentProject === 0 ? 'active' : ''}`}>
-            <img src="/assets/images/project-1.png" alt="Project 1" />
+        <h2 className="section-title3">Portfolio / Case Studies</h2>
+        <p className="portfolio-description">
+          Every project we deliver is built on trust, innovation, and measurable results. Here's a glimpse of what we do:
+        </p>
+        <div className="portfolio-list">
+          <div className="portfolio-item">
+            <h4 className="portfolio-title">Smart Taxi Booking Platform</h4>
+            <p className="portfolio-description-item">End-to-end ride-hailing app with real-time tracking and payments.</p>
           </div>
-          <div className={`project-card ${currentProject === 1 ? 'active' : ''}`}>
-            <img src="/assets/images/project-2.png" alt="Project 2" />
+          <div className="portfolio-item">
+            <h4 className="portfolio-title">Restaurant Discovery App</h4>
+            <p className="portfolio-description-item">Location-based app integrating video content from TikTok & YouTube.</p>
           </div>
-          <div className={`project-card ${currentProject === 2 ? 'active' : ''}`}>
-            <img src="/assets/images/project-3.png" alt="Project 3" />
+          <div className="portfolio-item">
+            <h4 className="portfolio-title">Global E-commerce Store</h4>
+            <p className="portfolio-description-item">Scalable Shopify solution integrated with advanced analytics.</p>
           </div>
-        </div>
-        <div className="projects-navigation">
-          <div className="nav-indicators">
-            <div 
-              className={`nav-dash ${currentProject === 0 ? 'active' : ''}`}
-              onClick={() => setCurrentProject(0)}
-            ></div>
-            <div 
-              className={`nav-dash ${currentProject === 1 ? 'active' : ''}`}
-              onClick={() => setCurrentProject(1)}
-            ></div>
-            <div 
-              className={`nav-dash ${currentProject === 2 ? 'active' : ''}`}
-              onClick={() => setCurrentProject(2)}
-            ></div>
-          </div>
-          <div className="nav-arrows">
-            <button 
-              className="nav-arrow"
-              onClick={prevProject}
-              disabled={currentProject === 0}
-            >
-              ‹
-            </button>
-            <button 
-              className="nav-arrow"
-              onClick={nextProject}
-              disabled={currentProject === totalProjects - 1}
-            >
-              ›
-            </button>
+          <div className="portfolio-item">
+            <h4 className="portfolio-title">AI Analytics Dashboard</h4>
+            <p className="portfolio-description-item">Real-time insights for better business decisions.</p>
           </div>
         </div>
       </section>
@@ -159,10 +135,10 @@ export default function About() {
           <div className="footer-column">
             <h4>Follow us</h4>
             <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Dribbble</a></li>
-              <li><a href="#">LinkedIn</a></li>
+              <li><a href="https://www.facebook.com/zovadigitech/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+              <li><a href="https://www.instagram.com/zovadigitech/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://www.tiktok.com/@eagleigroup" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+              <li><a href="https://www.linkedin.com/company/zovadigitech/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
           </div>
         </div>

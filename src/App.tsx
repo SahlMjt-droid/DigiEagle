@@ -3,6 +3,7 @@ import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import About from './pages/About';
 import Career from './pages/Career';
+import Contact from './pages/Contact';
 import Home from './pages/Home';
 
 function App() {
@@ -10,13 +11,7 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleContactClick = () => {
-    navigate('/');
-    setTimeout(() => {
-      const contactSection = document.getElementById('contact');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    navigate('/contact');
   };
 
   const toggleMenu = () => {
@@ -53,6 +48,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/career" element={<Career />} />
         </Routes>
       </main>

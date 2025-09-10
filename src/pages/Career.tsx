@@ -1,25 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Career.css';
 
 export default function Career() {
   const [expandedVacancy, setExpandedVacancy] = useState<number | null>(null);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const toggleVacancy = (index: number) => {
     setExpandedVacancy(expandedVacancy === index ? null : index);
   };
 
-  const vacancies = [
-    {
-      id: 1,
-      title: "3D MOTION DESIGNER",
-      description: "We are looking for a talented 3D Motion Designer to join our creative team..."
-    },
-    {
-      id: 2,
-      title: "ACCOUNTANT", 
-      description: "We are seeking a detail-oriented Accountant to manage our financial operations..."
-    }
-  ];
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -33,45 +25,98 @@ export default function Career() {
       <section className="career-hero-section">
         <div className="career-hero-content">
           <h1 className="career-hero-title">
-            Join<br />
-            Our Team
+            Join Us<br />
+             Build the Future<br />
+              Anywhere in the World
           </h1>
           
           <p className="career-hero-description">
-            WE'RE ALWAYS ON THE LOOKOUT FOR BRILLIANT MINDS AND BOLD IDEAS. CHECK OUT OUR VACANCIES<br />
-            AND APPLY FOR THE ONE THAT SUITS YOU BEST!
+            "At Zova Digitech, we believe talent has no borders. We're a global team of developers, designers,<br />
+            and innovators creating technology that empowers businesses everywhere."
           </p>
-          
-          <button className="career-apply-button">
-            Join the Team By Applying To The Following Open Vacancies
-          </button>
         </div>
       </section>
 
-      {/* Vacancies Section */}
-      <section className="vacancies-section">
-        <h2 className="vacancies-title">Our Vacancies</h2>
-        
-        <div className="vacancies-list">
-          {vacancies.map((vacancy, index) => (
-            <div key={vacancy.id} className="vacancy-item">
-              <div 
-                className="vacancy-header"
-                onClick={() => toggleVacancy(index)}
-              >
-                <h3 className="vacancy-title">{vacancy.title}</h3>
-                <span className="vacancy-toggle">
-                  {expandedVacancy === index ? '−' : '+'}
-                </span>
-              </div>
-              {expandedVacancy === index && (
-                <div className="vacancy-content">
-                  <p>{vacancy.description}</p>
-                </div>
-              )}
+      {/* Why Work With Us Section */}
+      <section className="why-work-section">
+        <h2 className="why-work-title">Why Work With Us:</h2>
+        <ul className="why-work-list">
+          <li>Global opportunities</li>
+          <li>Remote-first culture</li>
+          <li>Career growth in cutting-edge technologies</li>
+          <li>Collaborative, supportive team</li>
+          <li>Future visa sponsorship pathways for key roles</li>
+        </ul>
+      </section>
+
+      {/* Sample Roles Section */}
+      <section className="sample-roles-section">
+        <h2 className="sample-roles-title">Sample Roles:</h2>
+        <div className="roles-list">
+          <div className="role-item">
+            <div 
+              className="role-header"
+              onClick={() => toggleVacancy(0)}
+            >
+              <h3 className="role-title">Full-Stack Developer</h3>
+              <span className="role-toggle">
+                {expandedVacancy === 0 ? '−' : '+'}
+              </span>
             </div>
-          ))}
+            {expandedVacancy === 0 && (
+              <div className="role-content">
+                <p>Remote – Global</p>
+              </div>
+            )}
+          </div>
+          <div className="role-item">
+            <div 
+              className="role-header"
+              onClick={() => toggleVacancy(1)}
+            >
+              <h3 className="role-title">UI/UX Designer</h3>
+              <span className="role-toggle">
+                {expandedVacancy === 1 ? '−' : '+'}
+              </span>
+            </div>
+            {expandedVacancy === 1 && (
+              <div className="role-content">
+                <p>Remote – Global</p>
+              </div>
+            )}
+          </div>
+          <div className="role-item">
+            <div 
+              className="role-header"
+              onClick={() => toggleVacancy(2)}
+            >
+              <h3 className="role-title">Business Development Executive</h3>
+              <span className="role-toggle">
+                {expandedVacancy === 2 ? '−' : '+'}
+              </span>
+            </div>
+            {expandedVacancy === 2 && (
+              <div className="role-content">
+                <p>Remote – Global</p>
+              </div>
+            )}
+          </div>
         </div>
+      </section>
+
+      {/* How to Apply Section */}
+      <section className="apply-section">
+        <h2 className="apply-title">How to Apply:</h2>
+        <p className="apply-text">
+          Send your CV + portfolio to <a href="mailto:careers@eagledigitech.co.uk" className="apply-email">careers@eagledigitech.co.uk</a>
+        </p>
+      </section>
+
+      {/* Final Tagline Section */}
+      <section className="tagline-section">
+        <p className="final-tagline">
+          "At Zova Digitech, talent knows no borders — join us and create technology that impacts the world."
+        </p>
       </section>
 
       {/* Footer Section */}
@@ -103,10 +148,10 @@ export default function Career() {
           <div className="footer-column">
             <h4>Follow us</h4>
             <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Dribbble</a></li>
-              <li><a href="#">LinkedIn</a></li>
+              <li><a href="https://www.facebook.com/zovadigitech/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+              <li><a href="https://www.instagram.com/zovadigitech/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://www.tiktok.com/@eagleigroup" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+              <li><a href="https://www.linkedin.com/company/zovadigitech/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
           </div>
         </div>
