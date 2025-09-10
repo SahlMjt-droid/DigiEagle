@@ -1963,17 +1963,15 @@
     position: static !important;
     width: 100% !important;
     display: block !important;
-    background: red !important; /* DEBUG - should show red background */
   }
 
   .home-container .web3-studio-section .infinity-picture img {
     width: 100% !important;
-    max-width: 300px !important;
+    max-width: 250px !important; /* Even smaller to fit mobile */
     height: auto !important;
     margin: 0 auto !important;
     position: static !important;
     display: block !important;
-    border: 3px solid blue !important; /* DEBUG - should show blue border */
   }
 
   .home-container .process-section .process-image {
@@ -1982,7 +1980,6 @@
     position: static !important;
     display: block !important;
     text-align: center !important;
-    background: green !important; /* DEBUG - should show green background */
   }
 
   .home-container .process-section .process-image img {
@@ -1993,6 +1990,6 @@
     position: static !important;
     display: block !important;
     padding: 0 !important;
-    border: 3px solid yellow !important; /* DEBUG - should show yellow border */
+    min-height: 200px !important; /* Make it bigger */
   }
 }

@@ -1250,7 +1250,6 @@
     position: static !important;
     display: block !important;
     text-align: center !important;
-    background: orange !important; /* DEBUG - should show orange background */
   }
 
   .home-container .process-section .process-image img {
@@ -1261,6 +1260,6 @@
     position: static !important;
     display: block !important;
     padding: 0 !important;
-    border: 3px solid purple !important; /* DEBUG - should show purple border */
+    min-height: 200px !important; /* Make it bigger */
   }
 }
