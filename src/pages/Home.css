@@ -1179,12 +1179,34 @@
     margin-left: 0 !important;
     margin-top: 2rem !important;
     text-align: center !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
   }
 
   .infinity-picture img {
     width: 100% !important;
-    max-width: 350px !important;
+    max-width: 300px !important;
     height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+    position: static !important;
+  }
+
+  /* Force override desktop positioning for mobile */
+  .web3-studio-section .infinity-picture {
+    margin-left: 0 !important;
+    margin-top: 2rem !important;
+    position: static !important;
+    width: 100% !important;
+  }
+
+  .web3-studio-section .infinity-picture img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    position: static !important;
   }
 
   /* Services Section Mobile Fixes */
@@ -1290,6 +1312,9 @@
     margin-left: 0 !important;
     display: block !important;
     text-align: center !important;
+    position: static !important;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   .process-image img {
@@ -1299,6 +1324,25 @@
     margin-left: 0 !important;
     display: block !important;
     margin: 0 auto !important;
+    position: static !important;
+    padding: 0 !important;
+  }
+
+  /* Force override desktop positioning for mobile */
+  .process-section .process-image {
+    width: 100% !important;
+    margin-left: 0 !important;
+    position: static !important;
+    display: block !important;
+  }
+
+  .process-section .process-image img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    position: static !important;
+    padding: 0 !important;
   }
 
   /* Hero Section Mobile */
@@ -1874,5 +1918,39 @@
 
   .menu-button {
     font-size: 14px;
+  }
+}
+
+/* Force mobile image fixes for all mobile devices */
+@media (max-width: 1024px) {
+  .infinity-picture {
+    margin-left: 0 !important;
+    margin-top: 2rem !important;
+    position: static !important;
+    width: 100% !important;
+  }
+
+  .infinity-picture img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    position: static !important;
+  }
+
+  .process-image {
+    width: 100% !important;
+    margin-left: 0 !important;
+    position: static !important;
+    display: block !important;
+  }
+
+  .process-image img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    position: static !important;
+    padding: 0 !important;
   }
 }
