@@ -368,6 +368,31 @@
   display: block;
 }
 
+/* MOBILE OVERRIDE - Direct fix */
+@media (max-width: 1024px) {
+  .process-image img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+}
+
+/* FORCE MOBILE FIX - Even more specific */
+@media screen and (max-width: 1024px) {
+  .process-section .process-image img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
+    position: static !important;
+  }
+}
+
 
 
 
@@ -1261,5 +1286,18 @@
     display: block !important;
     padding: 0 !important;
     min-height: 200px !important; /* Make it bigger */
+  }
+}
+
+/* NUCLEAR OPTION - Force all mobile devices */
+@media (max-width: 1200px) {
+  .process-image img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+    position: static !important;
+    padding: 0 !important;
   }
 }
