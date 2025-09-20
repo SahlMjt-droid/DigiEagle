@@ -12,10 +12,15 @@ function App() {
 
   const handleContactClick = () => {
     navigate('/contact');
+    setIsMenuOpen(false);
   };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleNavClick = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -25,24 +30,16 @@ function App() {
           <div className="nav-logo">
             <img src="/assets/images/logol.png" />
           </div>
-          <div className="nav-links">
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/about" className="nav-link">About</Link>
+          <div className={`nav-links ${isMenuOpen ? 'visible' : ''}`}>
+            <Link to="/" className="nav-link" onClick={handleNavClick}>Home</Link>
+            <Link to="/about" className="nav-link" onClick={handleNavClick}>About</Link>
             <button onClick={handleContactClick} className="nav-link">Contact</button>
-            <Link to="/career" className="nav-link">Career</Link>
+            <Link to="/career" className="nav-link" onClick={handleNavClick}>Career</Link>
           </div>
           <button className="menu-button" onClick={toggleMenu}>
             Menu | | |
           </button>
         </div>
-        {isMenuOpen && (
-          <div className="menu-dropdown">
-            <Link to="/" className="menu-link" onClick={() => setIsMenuOpen(false)}>Home</Link>
-            <Link to="/about" className="menu-link" onClick={() => setIsMenuOpen(false)}>About</Link>
-            <button className="menu-link" onClick={() => { handleContactClick(); setIsMenuOpen(false); }}>Contact</button>
-            <Link to="/career" className="menu-link" onClick={() => setIsMenuOpen(false)}>Career</Link>
-          </div>
-        )}
       </nav>
       <main className="main-content">
         <Routes>

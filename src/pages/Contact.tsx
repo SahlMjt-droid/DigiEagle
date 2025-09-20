@@ -1,56 +1,15 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Contact.css';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
+  const navigate = useNavigate();
+  const [selectedCountry, setSelectedCountry] = useState('');
+  const [agreeToUpdates, setAgreeToUpdates] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    const { name, email, phone, message } = formData;
-    
-    // Create email content
-    const subject = 'New Project Idea';
-    const body = `Hello,
-
-I am interested in starting a new project with your team.
-
-Project Details:
-${message}
-
-Contact Information:
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-
-Looking forward to hearing from you.
-
-Best regards,
-${name}`;
-
-    // Create mailto link
-    const mailtoLink = `mailto:info@eagledigitech.co.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-  };
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -61,131 +20,176 @@ ${name}`;
 
   return (
     <div className="home-container">
-      {/* Contact Section */}
       <section id="contact" className="contact-section">
         <div className="contact-container">
-        <h2 className="contact-title1"> Let's Build Something Great Together!</h2>
+        <h2 className="contact-title1"> Contact Us</h2>
          
           <div className="contact-content">
-            <div className="contact-form">
-              <form onSubmit={handleSubmit}>
-                <input 
-                  type="text" 
-                  name="name"
-                  placeholder="Name" 
-                  className="form-input" 
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                />
-                <input 
-                  type="email" 
-                  name="email"
-                  placeholder="Email" 
-                  className="form-input" 
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                />
-                <input 
-                  type="text" 
-                  name="phone"
-                  placeholder="Phone" 
-                  className="form-input" 
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  required
-                />
-                <textarea 
-                  name="message"
-                  placeholder="Your Message" 
-                  className="form-textarea"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                ></textarea>
-                <button type="submit" className="submit-button">Send Now</button>
-              </form>
+            <div className="contact-pic">
+             <img src="/assets/images/mp.png" />
+             <div className="map-card">
+               <h3 className="map-title">zovadigitech</h3>
+               <p className="map-address">
+                 Fuel Studio Pottergate, Norwich<br />
+                 NR2 1DX
+               </p>
+               <button 
+                 className="map-button"
+                 onClick={() => window.open('https://www.google.com/maps/search/Fuel+Studio+Pottergate+Norwich+NR2+1DX', '_blank')}
+               >
+                 View larger map
+               </button>
+               <button className="directions-button">
+               <div className="ir-pic">
+               <img src="/assets/images/ir.png" />
+               
+               
+               </div>
+               </button>
+               <h3 className="iretitle">Directions</h3>
+             </div>
             </div>
-            <div className="contact-info">
+            <div className="contact-info2">
               <div className="contact-card">
-                <h3>Call Anytime</h3>
-                
-                
-                <div className="contact-item">
-                  <span className="contact-icon"><img src="/assets/images/phone.png" alt="Email" /></span>
-                  <span>[+44 XXX XXX XXXX]</span>
-                </div>
-                <h3>Send Email</h3>
-                <div className="contact-item">
-                  <span className="contact-icon"><img src="/assets/images/em.png" alt="Phone" /></span>
-                  <span>info@eagledigitech.co.uk
-                 </span>
-                </div>
-                <h3>Visit Us</h3>
-                <div className="contact-item">
-                  <span className="contact-icon"><img src="/assets/images/loc.png" alt="Location" /></span>
-                  <span> [Your UK office / virtual office address]</span>
-                </div>
-                <div className="social-links-text">Follow Us</div>
-                <div className="social-links">
-                  <a href="https://www.linkedin.com/company/zovadigitech/" target="_blank" rel="noopener noreferrer" className="social-link"><img src="/assets/images/lin.png" alt="LinkedIn" /></a>  
-                  <a href="https://www.instagram.com/zovadigitech/" target="_blank" rel="noopener noreferrer" className="social-link"><img src="/assets/images/int.png" alt="Instagram" /></a>
-                  <a href="https://www.facebook.com/zovadigitech/" target="_blank" rel="noopener noreferrer" className="social-link"><img src="/assets/images/fb.png" alt="Facebook" /></a>
-                  <a href="https://www.tiktok.com/@eagleigroup" target="_blank" rel="noopener noreferrer" className="social-link"><img src="/assets/images/twit.png" alt="TikTok" /></a>
-                </div>
+                <form className="contact-form-new">
+                  {/* Name Fields */}
+                  <div className="form-row">
+                    <div className="form-group">
+                      <label className="form-label">First name*</label>
+                      <input 
+                        type="text" 
+                        className="form-input-new" 
+                        placeholder="Your first name"
+                        required
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label className="form-label">Last name*</label>
+                      <input 
+                        type="text" 
+                        className="form-input-new" 
+                        placeholder="Your last name"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  {/* Email and LinkedIn Fields */}
+                  <div className="form-row">
+                    <div className="form-group">
+                      <label className="form-label">Email*</label>
+                      <input 
+                        type="email" 
+                        className="form-input-new" 
+                        placeholder="Enter your email"
+                        required
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label className="form-label">LinkedIn (if you have one)</label>
+                      <input 
+                        type="text" 
+                        className="form-input-new" 
+                        placeholder="LinkedIn URL"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Residency Location */}
+                  <div className="residency-section">
+                    <h3 className="residency-title">SELECT A RESIDENCY LOCATION</h3>
+                    <div className="country-buttons">
+                      <button 
+                        type="button" 
+                        className={`country-btn ${selectedCountry === 'Asia Pacific' ? 'active' : ''}`}
+                        onClick={() => setSelectedCountry('Asia Pacific')}
+                      >
+                        Asia Pacific
+                      </button>
+                      <button 
+                        type="button" 
+                        className={`country-btn ${selectedCountry === 'Americas' ? 'active' : ''}`}
+                        onClick={() => setSelectedCountry('Americas')}
+                      >
+                        Americas
+                      </button>
+                      <button 
+                        type="button" 
+                        className={`country-btn ${selectedCountry === 'Europe' ? 'active' : ''}`}
+                        onClick={() => setSelectedCountry('Europe')}
+                      >
+                        Europe
+                      </button>
+                      <button 
+                        type="button" 
+                        className={`country-btn ${selectedCountry === 'Middle East & Africa' ? 'active' : ''}`}
+                        onClick={() => setSelectedCountry('Middle East & Africa')}
+                      >
+                        Middle East & Africa
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="agreement-section">
+                    <label className="checkbox-container">
+                      <input 
+                        type="checkbox" 
+                        className="agreement-checkbox"
+                        checked={agreeToUpdates}
+                        onChange={(e) => setAgreeToUpdates(e.target.checked)}
+                      />
+                      I agree to receive updates and communications from Antler.
+                    </label>
+                  </div>
+
+                  <div className="privacy-section">
+                    <p className="privacy-text">
+                      By clicking submit, you agree to Antler's <span className="privacy-link">privacy policy</span>.
+                    </p>
+                  </div>
+
+                  <button type="submit" className="submit-btn">
+                    Submit
+                  </button>
+                </form>
               </div>
             </div>
           </div>
-          <h2  className='contact-title2'>We’ll get back to you within 24 hours — because your project deserves our full attention.</h2>
         </div>
       </section>
 
-      {/* Footer Section */}
       <section className="footer-section">
-        <button className="footer-scroll-top" onClick={scrollToTop}>↑</button>
         <div className="footer-content">
           <div className="footer-main">
-            <h3>DigiEagle</h3>
-            <p>Your trusted partner for digital transformation. We deliver secure, scalable, and innovative digital solutions that transform challenges into measurable success.</p>
+            <h3>ZOVA DIGITECH</h3>
+            <p>Feel free to reach out if you want to collaborate<br />
+               with us, or simply have a chat.</p>
             <div className="footer-email">
-              <span>info@eagledigitech.co.uk</span>
-              <span className="footer-email-arrow">→</span>
+              <span>info@zovadigitech.com</span>
+            </div>
+            <div className="footer-rights">© 2025 Cortix . All rights reserved.</div>
+            <div className="footer-img"><img src="/assets/images/ll (2).png" alt="Zova Digitech" /></div>
+          </div>
+          <div className="footer-column">
+            <h4>Site Links</h4>
+            <ul>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }}>Home</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); }}>About us</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); }}>Contact</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/career'); }}>Career</a></li>
+            </ul>
+          </div>
+          <div className="footer-card">
+            <div className="footer-card-icon">
+              <img src="/assets/images/pl.png" alt="Globe" style={{width: '90px', height: '107px', objectFit: 'contain'}} />
+            </div>
+            <div className="footer-card-content">
+              <div className="footer-card-title">Let's book a call</div>
+            </div>
+            <div className="footer-card-arrow" onClick={() => navigate('/contact')}>
+              →
             </div>
           </div>
-          <div className="footer-column">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Mobile Apps</a></li>
-              <li><a href="#">E-commerce</a></li>
-              <li><a href="#">AI & Data Science</a></li>
-              <li><a href="#">IT Consultancy</a></li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h4>Follow us</h4>
-            <ul>
-              <li><a href="https://www.facebook.com/zovadigitech/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-              <li><a href="https://www.instagram.com/zovadigitech/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-              <li><a href="https://www.tiktok.com/@eagleigroup" target="_blank" rel="noopener noreferrer">TikTok</a></li>
-              <li><a href="https://www.linkedin.com/company/zovadigitech/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="footer-shapes">
-          <div className="shape-1"></div>
-          <div className="shape-2"></div>
-          <div className="shape-3"></div>
         </div>
       </section>
     </div>

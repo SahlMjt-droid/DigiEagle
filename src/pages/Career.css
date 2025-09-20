@@ -42,61 +42,27 @@
 
 .career-hero-description {
   font-size: 25px;
-  font-weight: 1000;
+  font-weight: bold;
   line-height: 1.4;
-  color: #888;
+  color: white;
   margin-bottom: 8rem;
   text-align: left;
   letter-spacing: 1px;
  margin-right: -100px;
-  margin-top: 100px;
-  margin-left: 150px;
-  font-style: italic;
+  margin-top: -70px;
+  margin-left: 160px;
   font-family: 'monospace';
 }
 
-.why-work-section {
-  margin-left: 0;
-  text-align: left;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: 500px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
 
-.why-work-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff;
+
+.sample-roles-title {
+  font-size: 4rem !important;
+  font-weight: 600;
   margin-bottom: 3rem;
-  font-family: 'Poppins';
-  text-align: center;
-  font-style: italic;
+  color: #fff;
 }
 
-.why-work-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.why-work-list li {
-  font-size: 1.9rem;
-  color: #888;
-  margin-bottom: 0.8rem;
-  padding-left: 1.5rem;
-  position: relative;
-  font-style: italic;
-}
-
-  .why-work-list li::before {
-  content: "•";
-  color: #00ff8868 !important;
-  font-weight: bold !important;
-  position: absolute;
-  left: 0;
-}
 
 .apply-section {
   margin-left: 50px;
@@ -106,7 +72,7 @@
 }
 
 .apply-title {
-  font-size: 70px !important;
+  font-size: 90px !important;
   color: #888;
   margin-bottom: 4rem !important;
   padding-left: 1.5rem;
@@ -131,17 +97,19 @@
 }
 
 .final-tagline {
-  font-size: 1.8rem !important;
+  font-size: 1.72rem !important;
   color: #888 !important;
-  font-style: italic !important;
-  max-width: 800px;
+  font-style: normal !important;
+  width: 1500px !important;
   margin: 0 auto;
   font-family: 'monospace' !important;
-  line-height: 1.6 !important;
+  line-height: 2 !important;
+  text-align: left !important;
+  letter-spacing: -1.5px;
+  
 }
 
 
-/* Footer Section */
 .footer-section {
   padding: 8rem 0 10rem;
   background: #000000;
@@ -314,7 +282,6 @@
   opacity: 1;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .home-container {
     overflow-x: hidden;
@@ -382,7 +349,6 @@
     margin-bottom: 1rem !important;
   }
 
-  /* Sample Roles Section Mobile Fixes */
   .sample-roles-section {
     padding: 3rem 1rem !important;
     text-align: center !important;
@@ -434,7 +400,6 @@
     font-size: 1.2rem !important;
   }
 
-  /* Tagline Section Mobile Fixes */
   .tagline-section {
     padding: 3rem 1rem !important;
     text-align: center !important;
@@ -589,53 +554,382 @@
 }
 
 .roles-list {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
 .role-item {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  margin-bottom: 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 0;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
 .role-item:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: transparent;
 }
 
 .role-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 2rem 0;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
+.role-item.expanded .role-header {
+  background: white;
+  color: #000;
+  padding: 2rem;
+  margin: 0 1rem;
+  border-radius: 8px 8px 0 0;
+}
+
 .role-title {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: #fff;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.role-item.expanded .role-title {
+  color: #000;
 }
 
 .role-toggle {
-  font-size: 1.5rem;
-  color: #00ff88;
-  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
   transition: transform 0.3s ease;
 }
 
-.role-content {
-  padding: 0 2rem 1.5rem;
-  color: #888;
-  line-height: 1.6;
+.role-item.expanded .role-toggle {
+  color: #000;
 }
 
-/* Apply Section */
+.role-content {
+  padding: 0 0 2rem 0;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.role-item.expanded .role-content {
+  border-radius: 0 0 8px 8px;
+  margin-top: 0;
+}
+
+.role-details {
+  padding: 2rem;
+}
+
+.role-info-row {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.role-info-item {
+  flex: 1;
+}
+
+.role-info-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.role-info-value {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+}
+
+.role-description {
+  margin-bottom: 2rem;
+}
+
+.role-description-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0.5rem 0 0 0;
+}
+
+.apply-button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.apply-button:hover {
+  background: #333;
+}
+
+/* Application Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  width: 40%;
+  max-width: 600px;
+  min-width: 400px;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 2rem 0;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-input {
+  padding: 12px 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.modal-input:focus {
+  border-bottom-color: #666;
+}
+
+.modal-input::placeholder {
+  color: #999;
+}
+
+.file-upload-field {
+  position: relative;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0;
+}
+
+.file-input {
+  flex: 1;
+  margin-right: 0;
+}
+
+.upload-button {
+  background: #f5f5f5;
+  border: none;
+  padding: 12px 20px;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.upload-button:hover {
+  background: #e5e5e5;
+}
+
+.modal-textarea {
+  padding: 12px 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+  outline: none;
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.modal-textarea:focus {
+  border-bottom-color: #666;
+}
+
+.modal-textarea::placeholder {
+  color: #999;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.modal-apply-btn {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-apply-btn:hover {
+  background: #333;
+}
+
+.modal-cancel-btn {
+  background: #f5f5f5;
+  color: #666;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-cancel-btn:hover {
+  background: #e5e5e5;
+}
+
+.antler-residencies-section {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  margin-top: 100px;
+}
+
+.antler-background {
+  position: relative;
+  width: 90%;
+  height: 450px;
+  overflow: hidden;
+  margin-left: 80px;
+
+}
+
+.antler-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: crisp-edges !important;
+  image-rendering: high-quality !important;
+  filter: contrast(1.1) brightness(0.5) !important;
+}
+
+.antler-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.antler-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 2rem 0;
+  line-height: 1.2;
+  max-width: 800px;
+  margin-left: 10px;
+}
+
+.antler-title .highlight {
+  background: linear-gradient(90deg, #fefefe, #fefefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.antler-description {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0 0 3rem 0;
+  line-height: 1.6;
+  max-width: 600px;
+  font-weight: 400;
+}
+
+.antler-button {
+  background: #132E31;
+  color: #ffffff;
+  border: 0px solid #ffffff;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.antler-button:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: translateY(-2px);
+}
+
 .apply-section {
   padding: 4rem 0;
   background: #000000;
@@ -666,7 +960,6 @@
   text-decoration: underline;
 }
 
-/* Tagline Section */
 .tagline-section {
   padding: 4rem 0;
   background: #000000;
@@ -701,14 +994,116 @@
   }
 
   .sample-roles-title {
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
   }
 
   .role-title {
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
+  }
+
+  .role-header {
+    padding: 1.5rem 0 !important;
+  }
+
+  .role-toggle {
+    font-size: 1.8rem !important;
   }
 
   .role-content {
+    margin: 0 0.5rem 1rem 0.5rem !important;
+  }
+
+  .role-details {
+    padding: 1.5rem !important;
+  }
+
+  .role-info-row {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .role-info-label {
+    font-size: 0.8rem !important;
+  }
+
+  .role-info-value {
+    font-size: 0.9rem !important;
+  }
+
+  .role-description-text {
+    font-size: 0.9rem !important;
+  }
+
+  .apply-button {
+    padding: 0.7rem 1.5rem !important;
+    font-size: 0.8rem !important;
+    width: 100% !important;
+  }
+
+  .role-item.expanded .role-header {
+    padding: 1.5rem !important;
+    margin: 0 0.5rem !important;
+  }
+
+  .role-item.expanded .role-content {
+    margin: 0 0.5rem 1rem 0.5rem !important;
+  }
+
+  /* Modal Mobile Styles */
+  .modal-content {
+    width: 90% !important;
+    min-width: 300px !important;
+    max-width: 90% !important;
+    padding: 1.5rem !important;
+    margin: 1rem !important;
+  }
+
+  .modal-title {
+    font-size: 1.2rem !important;
+  }
+
+  .file-upload-field {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1rem !important;
+  }
+
+  .upload-button {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .modal-buttons {
+    flex-direction: column !important;
+    gap: 0.8rem !important;
+  }
+
+  .modal-apply-btn,
+  .modal-cancel-btn {
+    width: 100% !important;
+  }
+
+  .antler-background {
+    height: 300px !important;
+  }
+
+  .antler-overlay {
+    padding: 1.5rem !important;
+  }
+
+  .antler-title {
+    font-size: 2rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .antler-description {
+    font-size: 1rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .antler-button {
+    padding: 0.8rem 2rem !important;
     font-size: 0.9rem !important;
   }
 
@@ -739,5 +1134,89 @@
 
   .footer-main h3 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-container {
+    overflow-x: auto;
+    min-width: 100vw;
+    width: 100vw;
+    transform: scale(0.35);
+    transform-origin: top left;
+    height: 285vh;
+  }
+
+  body {
+    overflow-x: auto !important;
+  }
+
+  * {
+    width: 285vw !important;
+  }
+
+  .career-section,
+  .vacancies-section,
+  .apply-section,
+  .antler-section,
+  .footer-section {
+    width: 285vw !important;
+    min-width: 285vw !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .career-container {
+    overflow-x: auto;
+    min-width: 100vw;
+    width: 100vw;
+    transform: scale(0.25);
+    transform-origin: top left;
+    height: 400vh;
+  }
+
+  body {
+    overflow-x: auto !important;
+  }
+
+  * {
+    width: 400vw !important;
+  }
+
+  .career-section,
+  .vacancies-section,
+  .apply-section,
+  .antler-section,
+  .footer-section {
+    width: 400vw !important;
+    min-width: 400vw !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .career-container {
+    overflow-x: auto;
+    min-width: 100vw;
+    width: 100vw;
+    transform: scale(0.2);
+    transform-origin: top left;
+    height: 500vh;
+  }
+
+  body {
+    overflow-x: auto !important;
+  }
+
+  * {
+    width: 500vw !important;
+  }
+
+  .career-section,
+  .vacancies-section,
+  .apply-section,
+  .antler-section,
+  .footer-section {
+    width: 500vw !important;
+    min-width: 500vw !important;
   }
 }
