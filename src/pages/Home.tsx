@@ -4,7 +4,7 @@ import './Home.css';
 
 export default function Home() {
   const navigate = useNavigate();
-  const totalProjects = 3;
+ 
   const [currentTestimonial, setCurrentTestimonial] = useState(1);
   const [currentService, setCurrentService] = useState(0);
   const totalServices = 2;
