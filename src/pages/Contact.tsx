@@ -11,17 +11,11 @@ export default function Contact() {
     window.scrollTo(0, 0);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
 
   return (
-    <div className="home-container">
+    <div className="contact-container">
       <section id="contact" className="contact-section">
-        <div className="contact-container">
+        <div className="contact-container2">
         <h2 className="contact-title1"> Contact Us</h2>
          
           <div className="contact-content">
@@ -39,7 +33,8 @@ export default function Contact() {
                >
                  View larger map
                </button>
-               <button className="directions-button">
+               <button className="directions-button"
+               onClick={() => window.open('https://www.google.com/maps/search/Fuel+Studio+Pottergate+Norwich+NR2+1DX', '_blank')}>
                <div className="ir-pic">
                <img src="/assets/images/ir.png" />
                
@@ -158,7 +153,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="footer-section">
+      <section className="footer-section1">
         <div className="footer-content">
           <div className="footer-main">
             <h3>ZOVA DIGITECH</h3>

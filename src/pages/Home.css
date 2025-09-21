@@ -700,7 +700,7 @@
 }
 
 .contact-section {
-  padding: 10rem 0;
+  padding: 11rem 0;
   background: #000000;
 }
 
@@ -709,6 +709,7 @@
   margin: 0 auto;
   padding: 0 2rem;
   color: white;
+  overflow: visible;
 }
 
 .contact-title1 {
@@ -722,11 +723,12 @@
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
+  margin-top: 20px;
 }
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr !important;
   gap: 4rem;
   align-items: start;
 }
@@ -780,7 +782,7 @@
 .contact-info {
   display: flex;
   justify-content: center;
-  height: 143%;
+  height: auto;
   margin-top: -100px;
 }
 
@@ -788,7 +790,7 @@
   background: white;
   padding: 4rem;
   border-radius: 10px;
-  width: 170%;
+  width: 100%;
   max-width: 700px;
 }
 

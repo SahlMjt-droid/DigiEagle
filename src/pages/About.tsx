@@ -36,14 +36,8 @@ export default function About() {
     };
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
   return (
-    <div className="home-container">
+    <div className="about-container">
       <section className="web3-studio-section">
         <div className="content-wrapper">
           <div className="text-content">

@@ -95,14 +95,8 @@ ${formData.fullName}`;
   };
 
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
   return (
-    <div className="home-container">
+    <div className="career-container">
       {/* Hero Section */}
       <section className="career-hero-section">
         <div className="career-hero-content">
@@ -300,40 +294,7 @@ ${formData.fullName}`;
           </div>
         </section>
 
-        <section className="footer-section">
-          <div className="footer-content">
-            <div className="footer-main">
-              <h3>ZOVA DIGITECH</h3>
-              <p>Feel free to reach out if you want to collaborate<br />
-                 with us, or simply have a chat.</p>
-              <div className="footer-email">
-                <span>info@zovadigitech.com</span>
-              </div>
-              <div className="footer-rights">© 2025 Cortix . All rights reserved.</div>
-              <div className="footer-img"><img src="/assets/images/ll (2).png" alt="Zova Digitech" /></div>
-            </div>
-            <div className="footer-column">
-              <h4>Site Links</h4>
-              <ul>
-                <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }}>Home</a></li>
-                <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); }}>About us</a></li>
-                <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); }}>Contact</a></li>
-                <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/career'); }}>Career</a></li>
-              </ul>
-            </div>
-            <div className="footer-card">
-              <div className="footer-card-icon">
-                <img src="/assets/images/pl.png" alt="Globe" style={{width: '90px', height: '107px', objectFit: 'contain'}} />
-              </div>
-              <div className="footer-card-content">
-                <div className="footer-card-title">Let's book a call</div>
-              </div>
-              <div className="footer-card-arrow" onClick={() => navigate('/contact')}>
-                →
-              </div>
-            </div>
-          </div>
-        </section>
+
 
       {showApplicationModal && (
         <div className="modal-overlay" onClick={closeModal}>
@@ -419,6 +380,41 @@ ${formData.fullName}`;
           </div>
         </div>
       )}
+
+<section className="footer-section">
+          <div className="footer-content">
+            <div className="footer-main">
+              <h3>ZOVA DIGITECH</h3>
+              <p>Feel free to reach out if you want to collaborate<br />
+                 with us, or simply have a chat.</p>
+              <div className="footer-email">
+                <span>info@zovadigitech.com</span>
+              </div>
+              <div className="footer-rights">© 2025 Cortix . All rights reserved.</div>
+              <div className="footer-img"><img src="/assets/images/ll (2).png" alt="Zova Digitech" /></div>
+            </div>
+            <div className="footer-column">
+              <h4>Site Links</h4>
+              <ul>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }}>Home</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); }}>About us</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); }}>Contact</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('/career'); }}>Career</a></li>
+              </ul>
+            </div>
+            <div className="footer-card">
+              <div className="footer-card-icon">
+                <img src="/assets/images/pl.png" alt="Globe" style={{width: '90px', height: '107px', objectFit: 'contain'}} />
+              </div>
+              <div className="footer-card-content">
+                <div className="footer-card-title">Let's book a call</div>
+              </div>
+              <div className="footer-card-arrow" onClick={() => navigate('/contact')}>
+                →
+              </div>
+            </div>
+          </div>
+        </section>
     </div>
   );
 }

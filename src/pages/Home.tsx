@@ -4,7 +4,6 @@ import './Home.css';
 
 export default function Home() {
   const navigate = useNavigate();
-  const [currentProject, setCurrentProject] = useState(0);
   const totalProjects = 3;
   const [currentTestimonial, setCurrentTestimonial] = useState(1);
   const [currentService, setCurrentService] = useState(0);
@@ -89,21 +88,6 @@ export default function Home() {
     };
   }, []);
 
-  const nextProject = () => {
-    setCurrentProject((prev) => (prev + 1) % totalProjects);
-  };
-
-  const prevProject = () => {
-    setCurrentProject((prev) => (prev - 1 + totalProjects) % totalProjects);
-  };
-
-  const nextService = () => {
-    setCurrentService((prev) => (prev + 1) % totalServices);
-  };
-
-  const prevService = () => {
-    setCurrentService((prev) => (prev - 1 + totalServices) % totalServices);
-  };
 
   const testimonials = [
     {
@@ -131,12 +115,6 @@ export default function Home() {
     }
   ];
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
   return (
     <div className="home-container">
       <section className="hero-section">

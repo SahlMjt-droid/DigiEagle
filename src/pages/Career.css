@@ -1,4 +1,4 @@
-.home-container {
+.career-container {
   width: 100%;
   height: 100%;
   background: #000000;
@@ -283,7 +283,7 @@
 }
 
 @media (max-width: 768px) {
-  .home-container {
+  .career-container {
     overflow-x: hidden;
     min-width: 320px;
     max-width: 100vw;
