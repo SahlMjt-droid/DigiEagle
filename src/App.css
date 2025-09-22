@@ -178,19 +178,20 @@ button.nav-link {
   .nav-logo {
     width: 80px !important;
     height: 60px !important;
+    margin-top: 10px !important;
 }
 
 .nav-container {
   
-  height: 70px !important;
+  height: 80px !important;
 }
 
 .menu-button {
-  font-size: 12px !important;
+  font-size: 20px !important;
 }
 
 .nav-link {
-  font-size: 12px !important;
+  font-size: 20px !important;
 }
 
 
