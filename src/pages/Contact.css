@@ -361,7 +361,12 @@ margin-right: 40px;
   /* Only applies to touch devices (mobile/tablet) - Desktop with mouse hover is never affected */
   
   /* Fix footer margin bottom - CONTACT PAGE ONLY */
-  .footer-section {
+  .contact-container .footer-section1 {
+    margin-bottom: -50px !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  .footer-section1 {
     margin-bottom: -50px !important;
     padding-bottom: 2rem !important;
   }
