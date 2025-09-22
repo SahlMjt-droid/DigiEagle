@@ -1112,7 +1112,7 @@
 /* Mobile browsers will render at 1200px width and auto-scale */
 
 /* Fine-tuning for mobile viewport - surgical adjustments only */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   /* Keep everything as desktop - let viewport meta handle scaling */
   
   /* Fix hero section margins */
