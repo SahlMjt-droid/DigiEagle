@@ -977,24 +977,35 @@
 
 /* OLD SCALING CSS REMOVED - CONFLICTS WITH VIEWPORT META TAG APPROACH */
 
-/* PAGE-SPECIFIC MOBILE DETECTION - DESKTOP UNTOUCHED */
+/* NUCLEAR OPTION - MAXIMUM SPECIFICITY */
+html body.page-career .career-container .career-hero-section .career-hero-title,
+html body .career-container .career-hero-section .career-hero-title,
+html .career-hero-title,
+.career-hero-title {
+  margin-bottom: 2rem !important;
+}
+
+html body.page-career .career-container .career-hero-section .career-hero-description,
+html body .career-container .career-hero-section .career-hero-description,
+html .career-hero-description,
+.career-hero-description {
+  margin-bottom: 2rem !important;
+}
+
+/* TOUCH-BASED WITH NUCLEAR SPECIFICITY */
 @media (hover: none) and (pointer: coarse) {
-  /* Only applies to touch devices (mobile/tablet) - Desktop with mouse hover is never affected */
-  
-  /* Career page specific fixes */
-  body.page-career .career-hero-title {
+  html body.page-career .career-container .career-hero-section .career-hero-title,
+  html body .career-container .career-hero-section .career-hero-title,
+  html .career-hero-title {
     margin-top: -100px !important;
-    margin-bottom: 2rem !important;
+    margin-bottom: 1rem !important;
   }
   
-  body.page-career .career-hero-description {
-    margin-top: 0 !important;
-    margin-bottom: -100px !important;
-  }
-  
-  body.page-career .career-hero-section {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+  html body.page-career .career-container .career-hero-section .career-hero-description,
+  html body .career-container .career-hero-section .career-hero-description,
+  html .career-hero-description {
+    margin-top: -50px !important;
+    margin-bottom: 1rem !important;
   }
 }
 
