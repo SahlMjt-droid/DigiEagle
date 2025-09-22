@@ -977,23 +977,24 @@
 
 /* OLD SCALING CSS REMOVED - CONFLICTS WITH VIEWPORT META TAG APPROACH */
 
-/* TOUCH-BASED MOBILE DETECTION - DESKTOP UNTOUCHED */
+/* PAGE-SPECIFIC MOBILE DETECTION - DESKTOP UNTOUCHED */
 @media (hover: none) and (pointer: coarse) {
   /* Only applies to touch devices (mobile/tablet) - Desktop with mouse hover is never affected */
   
-  /* Override specific career elements with highest priority */
-  body .career-container .career-hero-title,
-  .career-container .career-hero-title,
-  .career-hero-title {
-    margin-top: -80px !important;
+  /* Career page specific fixes */
+  body.page-career .career-hero-title {
+    margin-top: -50px !important;
     margin-bottom: 2rem !important;
   }
   
-  body .career-container .career-hero-description,
-  .career-container .career-hero-description,
-  .career-hero-description {
+  body.page-career .career-hero-description {
     margin-top: 0 !important;
-    margin-bottom: -80px !important;
+    margin-bottom: -50px !important;
+  }
+  
+  body.page-career .career-hero-section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
   }
 }
 

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link, Route, Routes, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import './App.css';
 import About from './pages/About';
 import Career from './pages/Career';
@@ -8,7 +8,14 @@ import Home from './pages/Home';
 
 function App() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Add page-specific class to body for targeted CSS
+  useEffect(() => {
+    const pageName = location.pathname.slice(1) || 'home';
+    document.body.className = `page-${pageName}`;
+  }, [location]);
 
   const handleContactClick = () => {
     navigate('/contact');

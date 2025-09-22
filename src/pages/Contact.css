@@ -356,16 +356,18 @@ margin-right: 40px;
   margin-bottom: 200px !important;
 }
 
-/* TOUCH-BASED MOBILE DETECTION - DESKTOP UNTOUCHED */
+/* PAGE-SPECIFIC MOBILE DETECTION - DESKTOP UNTOUCHED */
 @media (hover: none) and (pointer: coarse) {
   /* Only applies to touch devices (mobile/tablet) - Desktop with mouse hover is never affected */
   
-  /* Override footer with highest priority */
-  body .contact-container .footer-section1,
-  .contact-container .footer-section1,
-  .footer-section1 {
-    margin-bottom: -200px !important;
-    
+  /* Contact page specific fixes */
+  body.page-contact .footer-section1 {
+    margin-bottom: -100px !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  body.page-contact .contact-container {
+    padding-bottom: 1rem !important;
   }
 }
 
