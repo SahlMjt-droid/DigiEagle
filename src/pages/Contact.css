@@ -360,15 +360,12 @@ margin-right: 40px;
 @media (hover: none) and (pointer: coarse) {
   /* Only applies to touch devices (mobile/tablet) - Desktop with mouse hover is never affected */
   
-  /* Fix footer margin bottom - CONTACT PAGE ONLY */
-  .contact-container .footer-section1 {
-    margin-bottom: -50px !important;
-    padding-bottom: 2rem !important;
-  }
-  
+  /* Override footer with highest priority */
+  body .contact-container .footer-section1,
+  .contact-container .footer-section1,
   .footer-section1 {
-    margin-bottom: -50px !important;
-    padding-bottom: 2rem !important;
+    margin-bottom: -100px !important;
+    padding-bottom: 1rem !important;
   }
 }
 

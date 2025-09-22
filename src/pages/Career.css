@@ -1141,22 +1141,19 @@
 @media (hover: none) and (pointer: coarse) {
   /* Only applies to touch devices (mobile/tablet) - Desktop with mouse hover is never affected */
   
-  /* Fix career title and subtitle margins - CAREER PAGE ONLY */
-  .career-container .career-hero-section .career-hero-title {
-    margin-top: -50px !important;
-    margin-bottom: 1rem !important;
-    padding-top: 0 !important;
+  /* Override specific career elements with highest priority */
+  body .career-container .career-hero-title,
+  .career-container .career-hero-title,
+  .career-hero-title {
+    margin-top: -80px !important;
+    margin-bottom: 2rem !important;
   }
   
-  .career-container .career-hero-section .career-hero-description {
-    margin-top: 1rem !important;
-    margin-bottom: -50px !important;
-    padding-bottom: 0 !important;
-  }
-  
-  .career-container .career-hero-section {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+  body .career-container .career-hero-description,
+  .career-container .career-hero-description,
+  .career-hero-description {
+    margin-top: 0 !important;
+    margin-bottom: -80px !important;
   }
 }
 
