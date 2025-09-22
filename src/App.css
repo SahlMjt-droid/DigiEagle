@@ -82,17 +82,20 @@ button.nav-link {
 
 .menu-button {
   display: block;
-  background: none;
-  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
-  font-size: 14px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
   position: relative;
   right: 0;
   top: 0;
   transform: none;
+  min-width: 60px;
+  min-height: 40px;
 }
 
 .menu-dropdown {
