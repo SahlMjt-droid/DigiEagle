@@ -1111,11 +1111,24 @@
 /* Desktop layout is preserved exactly as-is */
 /* Mobile browsers will render at 1200px width and auto-scale */
 
-/* Only minimal adjustments if absolutely needed */
+/* Fine-tuning for mobile viewport - surgical adjustments only */
 @media (max-width: 768px) {
   /* Keep everything as desktop - let viewport meta handle scaling */
   
-  /* Only ensure menu button is visible after scaling */
+  /* Fix hero section margins */
+  .hero-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    min-height: 85vh !important;
+  }
+  
+  /* Fix worldwide section height */
+  .working-worldwide-section {
+    height: 60vh !important;
+    min-height: 400px !important;
+  }
+  
+  /* Ensure menu button is visible after scaling */
   .menu-button {
     background: rgba(255, 255, 255, 0.2) !important;
     border: 1px solid rgba(255, 255, 255, 0.4) !important;
@@ -1128,6 +1141,43 @@
   .nav-links.visible {
     background: rgba(0, 0, 0, 0.95) !important;
     backdrop-filter: blur(20px) !important;
+  }
+  
+  /* Fine-tune other sections if needed */
+  .partners-section {
+    padding: 3rem 0 !important;
+  }
+  
+  .web3-studio-section {
+    padding: 4rem 0 !important;
+  }
+  
+  .stats-counter-section {
+    padding: 4rem 0 !important;
+  }
+  
+  .service-section {
+    padding: 4rem 0 !important;
+  }
+  
+  .projects-section {
+    padding: 4rem 0 !important;
+  }
+  
+  .testimonials-section {
+    padding: 4rem 0 !important;
+  }
+  
+  .contact-section {
+    padding: 6rem 0 !important;
+  }
+  
+  .cta-section {
+    margin: 3rem auto !important;
+  }
+  
+  .footer-section {
+    padding: 4rem 0 3rem !important;
   }
 }
 
