@@ -984,15 +984,15 @@
   html body.page-career .career-container .career-hero-section .career-hero-title,
   html body .career-container .career-hero-section .career-hero-title,
   html .career-hero-title {
-    margin-top: -100px !important;
-    margin-bottom: 2rem !important;
+    margin-top: -10rem !important;
+    margin-bottom: 4rem !important;
   }
   
   html body.page-career .career-container .career-hero-section .career-hero-description,
   html body .career-container .career-hero-section .career-hero-description,
   html .career-hero-description {
     
-    margin-bottom: 15rem !important;
+    margin-bottom: -10rem !important;
   }
 }
 
