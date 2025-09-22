@@ -983,13 +983,13 @@
   
   /* Career page specific fixes */
   body.page-career .career-hero-title {
-    margin-top: -50px !important;
+    margin-top: -100px !important;
     margin-bottom: 2rem !important;
   }
   
   body.page-career .career-hero-description {
     margin-top: 0 !important;
-    margin-bottom: -50px !important;
+    margin-bottom: -100px !important;
   }
   
   body.page-career .career-hero-section {
