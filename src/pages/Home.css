@@ -1110,16 +1110,16 @@
 
 @media (max-width: 768px) {
   .home-container {
-    overflow-x: visible;
+    overflow-x: hidden;
     min-width: 100vw;
-    width: 250vw;
-    transform: scale(0.7);
-    transform-origin: center;
+    width: 100vw;
+    transform: scale(0.4);
+    transform-origin: top left;
     height: 250vh;
   }
 
   body {
-    overflow-x: visible !important;
+    overflow-x: hidden !important;
   }
 
   * {
@@ -1141,20 +1141,36 @@
     min-width: 250vw !important;
   }
 
+  /* IMPROVE MENU BUTTON VISIBILITY */
+  .menu-button {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 4px !important;
+    padding: 0.4rem 0.8rem !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    min-width: 45px !important;
+    min-height: 30px !important;
+  }
 
+  .nav-links.visible {
+    background: rgba(0, 0, 0, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+  }
+}
 
 @media (max-width: 480px) {
   .home-container {
-    overflow-x: visible;
+    overflow-x: hidden;
     min-width: 100vw;
-    width: 333vw;
-    transform: scale(0.7);
-    transform-origin: center;
+    width: 100vw;
+    transform: scale(0.3);
+    transform-origin: top left;
     height: 333vh;
   }
 
   body {
-    overflow-x: visible !important;
+    overflow-x: hidden !important;
   }
 
   * {
@@ -1172,24 +1188,35 @@
   .contact-section,
   .cta-section,
   .footer-section {
-    width: 400vw !important;
+    width: 333vw !important;
     min-width: 333vw !important;
   }
 
-
+  /* IMPROVE MENU BUTTON VISIBILITY */
+  .menu-button {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 4px !important;
+    padding: 0.3rem 0.6rem !important;
+    font-size: 11px !important;
+    font-weight: 400 !important;
+    min-width: 40px !important;
+    min-height: 25px !important;
+  }
+}
 
 @media (max-width: 320px) {
   .home-container {
-    overflow-x: visible;
+    overflow-x: hidden;
     min-width: 100vw;
-    width: 200vw;
+    width: 100vw;
     transform: scale(0.25);
-    transform-origin: center;
+    transform-origin: top left;
     height: 400vh;
   }
 
   body {
-    overflow-x: visible !important;
+    overflow-x: hidden !important;
   }
 
   * {
@@ -1211,7 +1238,17 @@
     min-width: 400vw !important;
   }
 
-
+  /* IMPROVE MENU BUTTON VISIBILITY */
+  .menu-button {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 4px !important;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    min-width: 35px !important;
+    min-height: 20px !important;
+  }
 }
 
 
