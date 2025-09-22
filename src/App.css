@@ -176,6 +176,7 @@ button.nav-link {
 
 @media (hover: none) and (pointer: coarse) {
   .nav-logo {
-    width: 30px !important;
+    width: 80px !important;
+    height: 60px !important;
 }
 }
