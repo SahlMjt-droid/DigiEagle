@@ -986,6 +986,7 @@
   html .career-hero-title {
     margin-top: -10rem !important;
     margin-bottom: 4rem !important;
+    font-size: 5rem !important;
   }
   
   html body.page-career .career-container .career-hero-section .career-hero-description,
@@ -993,6 +994,7 @@
   html .career-hero-description {
     
     margin-bottom: -10rem !important;
+    font-size: 2rem !important;
   }
 }
 
