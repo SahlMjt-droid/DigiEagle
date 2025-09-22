@@ -1108,7 +1108,7 @@
    MOBILE RESPONSIVE DESIGN - FIXED VERSION
    ============================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   /* GLOBAL MOBILE FIXES */
   * {
     box-sizing: border-box;
