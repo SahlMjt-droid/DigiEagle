@@ -1138,7 +1138,7 @@
 }
 
 /* Fine-tuning for mobile viewport - surgical adjustments only */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   /* Keep everything as desktop - let viewport meta handle scaling */
   
   /* Fix career section spacing */
