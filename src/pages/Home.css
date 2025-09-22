@@ -1105,149 +1105,29 @@
 }
 
 /* ============================================
-   MOBILE RESPONSIVE DESIGN - SCALING APPROACH
+   VIEWPORT META TAG APPROACH - CLEAN & SIMPLE
    ============================================ */
 
+/* Desktop layout is preserved exactly as-is */
+/* Mobile browsers will render at 1200px width and auto-scale */
+
+/* Only minimal adjustments if absolutely needed */
 @media (max-width: 768px) {
-  .home-container {
-    overflow-x: auto;
-    min-width: 100vw;
-    width: 100vw;
-    transform: scale(0.45);
-    transform-origin: top left;
-    height: 222vh;
-  }
-
-  body {
-    overflow-x: auto !important;
-  }
-
-  * {
-    width: 222vw !important;
-  }
-
-  .hero-section,
-  .partners-section,
-  .web3-studio-section,
-  .stats-counter-section,
-  .service-section,
-  .working-worldwide-section,
-  .projects-section,
-  .testimonials-section,
-  .contact-section,
-  .cta-section,
-  .footer-section {
-    width: 222vw !important;
-    min-width: 222vw !important;
-  }
-
-  /* IMPROVE MENU BUTTON VISIBILITY */
+  /* Keep everything as desktop - let viewport meta handle scaling */
+  
+  /* Only ensure menu button is visible after scaling */
   .menu-button {
-    background: rgba(255, 255, 255, 0.3) !important;
-    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
     border-radius: 4px !important;
     padding: 0.4rem 0.8rem !important;
-    font-size: 12px !important;
-    font-weight: 400 !important;
-    min-width: 45px !important;
-    min-height: 30px !important;
+    min-width: 60px !important;
+    min-height: 35px !important;
   }
 
   .nav-links.visible {
     background: rgba(0, 0, 0, 0.95) !important;
     backdrop-filter: blur(20px) !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-container {
-    overflow-x: auto;
-    min-width: 100vw;
-    width: 100vw;
-    transform: scale(0.35);
-    transform-origin: top left;
-    height: 286vh;
-  }
-
-  body {
-    overflow-x: auto !important;
-  }
-
-  * {
-    width: 286vw !important;
-  }
-
-  .hero-section,
-  .partners-section,
-  .web3-studio-section,
-  .stats-counter-section,
-  .service-section,
-  .working-worldwide-section,
-  .projects-section,
-  .testimonials-section,
-  .contact-section,
-  .cta-section,
-  .footer-section {
-    width: 286vw !important;
-    min-width: 286vw !important;
-  }
-
-  /* IMPROVE MENU BUTTON VISIBILITY */
-  .menu-button {
-    background: rgba(255, 255, 255, 0.3) !important;
-    border: 1px solid rgba(255, 255, 255, 0.5) !important;
-    border-radius: 4px !important;
-    padding: 0.3rem 0.6rem !important;
-    font-size: 11px !important;
-    font-weight: 400 !important;
-    min-width: 40px !important;
-    min-height: 25px !important;
-  }
-}
-
-@media (max-width: 320px) {
-  .home-container {
-    overflow-x: auto;
-    min-width: 100vw;
-    width: 100vw;
-    transform: scale(0.28);
-    transform-origin: top left;
-    height: 357vh;
-  }
-
-  body {
-    overflow-x: auto !important;
-  }
-
-  * {
-    width: 357vw !important;
-  }
-
-  .hero-section,
-  .partners-section,
-  .web3-studio-section,
-  .stats-counter-section,
-  .service-section,
-  .working-worldwide-section,
-  .projects-section,
-  .testimonials-section,
-  .contact-section,
-  .cta-section,
-  .footer-section {
-    width: 357vw !important;
-    min-width: 357vw !important;
-  }
-
-  /* IMPROVE MENU BUTTON VISIBILITY */
-  .menu-button {
-    background: rgba(255, 255, 255, 0.3) !important;
-    border: 1px solid rgba(255, 255, 255, 0.5) !important;
-    border-radius: 4px !important;
-    padding: 0.25rem 0.5rem !important;
-    font-size: 10px !important;
-    font-weight: 400 !important;
-    min-width: 35px !important;
-    min-height: 20px !important;
   }
 }
 
