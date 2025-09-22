@@ -975,22 +975,9 @@
   line-height: 1.6;
 }
 
-/* OLD SCALING CSS REMOVED - CONFLICTS WITH VIEWPORT META TAG APPROACH */
+ 
 
-/* NUCLEAR OPTION - MAXIMUM SPECIFICITY */
-html body.page-career .career-container .career-hero-section .career-hero-title,
-html body .career-container .career-hero-section .career-hero-title,
-html .career-hero-title,
-.career-hero-title {
-  margin-bottom: 2rem !important;
-}
 
-html body.page-career .career-container .career-hero-section .career-hero-description,
-html body .career-container .career-hero-section .career-hero-description,
-html .career-hero-description,
-.career-hero-description {
-  margin-bottom: 2rem !important;
-}
 
 /* TOUCH-BASED WITH NUCLEAR SPECIFICITY */
 @media (hover: none) and (pointer: coarse) {
@@ -998,14 +985,14 @@ html .career-hero-description,
   html body .career-container .career-hero-section .career-hero-title,
   html .career-hero-title {
     margin-top: -100px !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0rem !important;
   }
   
   html body.page-career .career-container .career-hero-section .career-hero-description,
   html body .career-container .career-hero-section .career-hero-description,
   html .career-hero-description {
-    margin-top: -50px !important;
-    margin-bottom: 1rem !important;
+    
+    margin-bottom: 15rem !important;
   }
 }
 

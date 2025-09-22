@@ -356,13 +356,7 @@ margin-right: 40px;
   margin-bottom: 100px !important;
 }
 
-/* NUCLEAR OPTION - MAXIMUM SPECIFICITY */
-html body.page-contact .contact-container .footer-section1,
-html body .contact-container .footer-section1,
-html .footer-section1,
-.footer-section1 {
-  margin-bottom: 50px !important;
-}
+
 
 /* TOUCH-BASED WITH NUCLEAR SPECIFICITY */
 @media (hover: none) and (pointer: coarse) {
