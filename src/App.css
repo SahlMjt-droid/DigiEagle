@@ -138,67 +138,9 @@ button.nav-link {
   padding: 0;
 }
 
-@media (max-width: 768px) {
-  .nav {
-    transform: scale(0.35);
-    transform-origin: top left;
-    width: 285vw !important;
-    min-width: 285vw !important;
-  }
 
-  .nav-container {
-    width: 285vw !important;
-    min-width: 285vw !important;
-  }
 
-  .nav-links {
-    display: flex !important;
-    gap: 1rem !important;
-    transform: translateX(100%) !important;
-    opacity: 0 !important;
-    transition: all 0.3s ease-in-out !important;
-  }
 
-  .nav-links.visible {
-    transform: translateX(0) !important;
-    opacity: 1 !important;
-  }
-
-  .main-content {
-    margin-top: 21px !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav {
-    transform: scale(0.25);
-    transform-origin: top left;
-    width: 400vw !important;
-    min-width: 400vw !important;
-  }
-
-  .nav-container {
-    width: 400vw !important;
-    min-width: 400vw !important;
-  }
-
-  .nav-links {
-    display: flex !important;
-    gap: 0.5rem !important;
-    transform: translateX(100%) !important;
-    opacity: 0 !important;
-    transition: all 0.3s ease-in-out !important;
-  }
-
-  .nav-links.visible {
-    transform: translateX(0) !important;
-    opacity: 1 !important;
-  }
-
-  .main-content {
-    margin-top: 15px !important;
-  }
-}
 
 @media (max-width: 320px) {
   .nav {
@@ -229,4 +171,11 @@ button.nav-link {
   .main-content {
     margin-top: 12px !important;
   }
+}
+
+
+@media (hover: none) and (pointer: coarse) {
+  .nav-logo {
+    width: 30px !important;
+}
 }
