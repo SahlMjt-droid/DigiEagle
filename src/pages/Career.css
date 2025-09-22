@@ -1143,13 +1143,13 @@
   
   /* Fix career title and subtitle margins - CAREER PAGE ONLY */
   .career-hero-title {
-    margin-top: 1rem !important;
+    margin-top: -50px !important;
     margin-bottom: 1rem !important;
   }
   
   .career-hero-description {
     margin-top: 1rem !important;
-    margin-bottom: 2rem !important;
+    margin-bottom: -50px !important;
   }
   
   .career-hero-section {

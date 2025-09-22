@@ -1117,31 +1117,21 @@
   
   /* Fix hero section margins - HOME PAGE ONLY */
   .hero-section {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-    min-height: 60vh !important;
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+    min-height: 40vh !important;
   }
   
   /* Fix worldwide section height - HOME PAGE ONLY */
   .working-worldwide-section {
-    height: 400px !important;
+    height: 500px !important;
     min-height: 300px !important;
   }
   
   /* Ensure menu button is visible after scaling */
-  .menu-button {
-    background: rgba(255, 255, 255, 0.2) !important;
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
-    border-radius: 4px !important;
-    padding: 0.4rem 0.8rem !important;
-    min-width: 60px !important;
-    min-height: 35px !important;
-  }
 
-  .nav-links.visible {
-    background: rgba(0, 0, 0, 0.95) !important;
-    backdrop-filter: blur(20px) !important;
-  }
+
+
 }
 
 

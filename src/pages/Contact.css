@@ -362,7 +362,7 @@ margin-right: 40px;
   
   /* Fix footer margin bottom - CONTACT PAGE ONLY */
   .footer-section {
-    margin-bottom: 1rem !important;
+    margin-bottom: -50px !important;
     padding-bottom: 2rem !important;
   }
 }
