@@ -179,4 +179,19 @@ button.nav-link {
     width: 80px !important;
     height: 60px !important;
 }
+
+.nav-container {
+  
+  height: 70px !important;
+}
+
+.menu-button {
+  font-size: 12px !important;
+}
+
+.nav-link {
+  font-size: 12px !important;
+}
+
+
 }
