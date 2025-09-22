@@ -1110,16 +1110,16 @@
 
 @media (max-width: 768px) {
   .home-container {
-    overflow-x: hidden;
+    overflow-x: visible;
     min-width: 100vw;
-    width: 100vw;
-    transform: scale(0.4);
-    transform-origin: top left;
+    width: 250vw;
+    transform: scale(0.7);
+    transform-origin: center;
     height: 250vh;
   }
 
   body {
-    overflow-x: hidden !important;
+    overflow-x: visible !important;
   }
 
   * {
