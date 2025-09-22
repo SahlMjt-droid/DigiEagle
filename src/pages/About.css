@@ -1277,32 +1277,25 @@
 }
 
 
+/* Fine-tuning for mobile viewport - surgical adjustments only */
 @media (max-width: 768px) {
-  .about-container {
-    overflow-x: auto;
-    min-width: 100vw;
-    width: 100vw;
-    transform: scale(0.35);
-    transform-origin: top left;
-    height: 285vh;
+  /* Keep everything as desktop - let viewport meta handle scaling */
+  
+  /* Fix section margins and spacing */
+  .web3-studio-section {
+    padding: 4rem 0 !important;
   }
-
-  body {
-    overflow-x: auto !important;
+  
+  .service-section {
+    padding: 4rem 0 !important;
   }
-
-  * {
-    width: 285vw !important;
+  
+  .projects-section {
+    padding: 4rem 0 !important;
   }
-
-  .about-section,
-  .web3-studio-section,
-  .services-section,
-  .projects-section,
-  .process-section,
+  
   .footer-section {
-    width: 285vw !important;
-    min-width: 285vw !important;
+    padding: 4rem 0 3rem !important;
   }
 }
 

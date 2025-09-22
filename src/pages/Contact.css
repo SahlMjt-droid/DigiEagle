@@ -356,6 +356,16 @@ margin-right: 40px;
   margin-bottom: 200px !important;
 }
 
+/* Fine-tuning for mobile viewport - surgical adjustments only */
+@media (max-width: 768px) {
+  /* Keep everything as desktop - let viewport meta handle scaling */
+  
+  /* Fix contact section spacing */
+  .contact-section {
+    padding: 6rem 0 !important;
+  }
+}
+
 
 
 

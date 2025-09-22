@@ -1137,31 +1137,29 @@
   }
 }
 
+/* Fine-tuning for mobile viewport - surgical adjustments only */
 @media (max-width: 768px) {
-  .career-container {
-    overflow-x: auto;
-    min-width: 100vw;
-    width: 100vw;
-    transform: scale(0.35);
-    transform-origin: top left;
-    height: 285vh;
+  /* Keep everything as desktop - let viewport meta handle scaling */
+  
+  /* Fix career section spacing */
+  .career-section {
+    padding: 4rem 0 !important;
   }
-
-  body {
-    overflow-x: auto !important;
+  
+  .vacancies-section {
+    padding: 4rem 0 !important;
   }
-
-  * {
-    width: 285vw !important;
+  
+  .apply-section {
+    padding: 4rem 0 !important;
   }
-
-  .career-section,
-  .vacancies-section,
-  .apply-section,
-  .antler-section,
+  
+  .antler-section {
+    padding: 4rem 0 !important;
+  }
+  
   .footer-section {
-    width: 285vw !important;
-    min-width: 285vw !important;
+    padding: 4rem 0 3rem !important;
   }
 }
 
