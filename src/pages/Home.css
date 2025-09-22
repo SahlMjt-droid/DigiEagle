@@ -1108,7 +1108,7 @@
    MOBILE RESPONSIVE DESIGN - FIXED VERSION
    ============================================ */
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   /* GLOBAL MOBILE FIXES */
   * {
     box-sizing: border-box;
@@ -1299,6 +1299,7 @@
     padding: 2rem 1rem !important;
     margin-top: 1rem !important;
     background: #000000 !important;
+    margin-left: -50px !important;
   }
 
   .stats-container {
