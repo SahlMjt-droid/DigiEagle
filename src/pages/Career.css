@@ -1137,29 +1137,24 @@
   }
 }
 
-/* Fine-tuning for mobile viewport - surgical adjustments only */
-@media (max-width: 1200px) {
-  /* Keep everything as desktop - let viewport meta handle scaling */
+/* TOUCH-BASED MOBILE DETECTION - DESKTOP UNTOUCHED */
+@media (hover: none) and (pointer: coarse) {
+  /* Only applies to touch devices (mobile/tablet) - Desktop with mouse hover is never affected */
   
-  /* Fix career section spacing */
-  .career-section {
-    padding: 4rem 0 !important;
+  /* Fix career title and subtitle margins - CAREER PAGE ONLY */
+  .career-hero-title {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
   }
   
-  .vacancies-section {
-    padding: 4rem 0 !important;
+  .career-hero-description {
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
   }
   
-  .apply-section {
-    padding: 4rem 0 !important;
-  }
-  
-  .antler-section {
-    padding: 4rem 0 !important;
-  }
-  
-  .footer-section {
-    padding: 4rem 0 3rem !important;
+  .career-hero-section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
   }
 }
 

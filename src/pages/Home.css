@@ -1111,21 +1111,21 @@
 /* Desktop layout is preserved exactly as-is */
 /* Mobile browsers will render at 1200px width and auto-scale */
 
-/* Fine-tuning for mobile viewport - surgical adjustments only */
-@media (max-width: 1200px) {
-  /* Keep everything as desktop - let viewport meta handle scaling */
+/* TOUCH-BASED MOBILE DETECTION - DESKTOP UNTOUCHED */
+@media (hover: none) and (pointer: coarse) {
+  /* Only applies to touch devices (mobile/tablet) - Desktop with mouse hover is never affected */
   
-  /* Fix hero section margins */
+  /* Fix hero section margins - HOME PAGE ONLY */
   .hero-section {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
-    min-height: 40vh !important;
+    min-height: 60vh !important;
   }
   
-  /* Fix worldwide section height */
+  /* Fix worldwide section height - HOME PAGE ONLY */
   .working-worldwide-section {
-    height: 300px !important;
-    min-height: 200px !important;
+    height: 400px !important;
+    min-height: 300px !important;
   }
   
   /* Ensure menu button is visible after scaling */
@@ -1141,43 +1141,6 @@
   .nav-links.visible {
     background: rgba(0, 0, 0, 0.95) !important;
     backdrop-filter: blur(20px) !important;
-  }
-  
-  /* Fine-tune other sections if needed */
-  .partners-section {
-    padding: 3rem 0 !important;
-  }
-  
-  .web3-studio-section {
-    padding: 4rem 0 !important;
-  }
-  
-  .stats-counter-section {
-    padding: 4rem 0 !important;
-  }
-  
-  .service-section {
-    padding: 4rem 0 !important;
-  }
-  
-  .projects-section {
-    padding: 4rem 0 !important;
-  }
-  
-  .testimonials-section {
-    padding: 4rem 0 !important;
-  }
-  
-  .contact-section {
-    padding: 6rem 0 !important;
-  }
-  
-  .cta-section {
-    margin: 3rem auto !important;
-  }
-  
-  .footer-section {
-    padding: 4rem 0 3rem !important;
   }
 }
 
