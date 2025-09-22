@@ -1110,7 +1110,7 @@
 
 @media (max-width: 768px) {
   .home-container {
-    overflow-x: auto;
+    overflow-x: visible;
     min-width: 100vw;
     width: 100vw;
     transform: scale(0.35);
@@ -1119,7 +1119,7 @@
   }
 
   body {
-    overflow-x: auto !important;
+    overflow-x: visible !important;
   }
 
   * {
@@ -1144,7 +1144,7 @@
 
 @media (max-width: 480px) {
   .home-container {
-    overflow-x: auto;
+    overflow-x: visible;
     min-width: 100vw;
     width: 100vw;
     transform: scale(0.25);
@@ -1153,7 +1153,7 @@
   }
 
   body {
-    overflow-x: auto !important;
+    overflow-x: visible !important;
   }
 
   * {
@@ -1178,7 +1178,7 @@
 
 @media (max-width: 320px) {
   .home-container {
-    overflow-x: auto;
+    overflow-x: visible;
     min-width: 100vw;
     width: 100vw;
     transform: scale(0.2);
@@ -1187,7 +1187,7 @@
   }
 
   body {
-    overflow-x: auto !important;
+    overflow-x: visible !important;
   }
 
   * {
