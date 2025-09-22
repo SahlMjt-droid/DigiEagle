@@ -1110,20 +1110,20 @@
 
 @media (max-width: 768px) {
   .home-container {
-    overflow-x: hidden;
+    overflow-x: auto;
     min-width: 100vw;
     width: 100vw;
-    transform: scale(0.4);
+    transform: scale(0.45);
     transform-origin: top left;
-    height: 250vh;
+    height: 222vh;
   }
 
   body {
-    overflow-x: hidden !important;
+    overflow-x: auto !important;
   }
 
   * {
-    width: 250vw !important;
+    width: 222vw !important;
   }
 
   .hero-section,
@@ -1137,14 +1137,14 @@
   .contact-section,
   .cta-section,
   .footer-section {
-    width: 250vw !important;
-    min-width: 250vw !important;
+    width: 222vw !important;
+    min-width: 222vw !important;
   }
 
   /* IMPROVE MENU BUTTON VISIBILITY */
   .menu-button {
-    background: rgba(255, 255, 255, 0.2) !important;
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
     border-radius: 4px !important;
     padding: 0.4rem 0.8rem !important;
     font-size: 12px !important;
@@ -1161,20 +1161,20 @@
 
 @media (max-width: 480px) {
   .home-container {
-    overflow-x: hidden;
+    overflow-x: auto;
     min-width: 100vw;
     width: 100vw;
-    transform: scale(0.3);
+    transform: scale(0.35);
     transform-origin: top left;
-    height: 333vh;
+    height: 286vh;
   }
 
   body {
-    overflow-x: hidden !important;
+    overflow-x: auto !important;
   }
 
   * {
-    width: 333vw !important;
+    width: 286vw !important;
   }
 
   .hero-section,
@@ -1188,14 +1188,14 @@
   .contact-section,
   .cta-section,
   .footer-section {
-    width: 333vw !important;
-    min-width: 333vw !important;
+    width: 286vw !important;
+    min-width: 286vw !important;
   }
 
   /* IMPROVE MENU BUTTON VISIBILITY */
   .menu-button {
-    background: rgba(255, 255, 255, 0.2) !important;
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
     border-radius: 4px !important;
     padding: 0.3rem 0.6rem !important;
     font-size: 11px !important;
@@ -1207,20 +1207,20 @@
 
 @media (max-width: 320px) {
   .home-container {
-    overflow-x: hidden;
+    overflow-x: auto;
     min-width: 100vw;
     width: 100vw;
-    transform: scale(0.25);
+    transform: scale(0.28);
     transform-origin: top left;
-    height: 400vh;
+    height: 357vh;
   }
 
   body {
-    overflow-x: hidden !important;
+    overflow-x: auto !important;
   }
 
   * {
-    width: 400vw !important;
+    width: 357vw !important;
   }
 
   .hero-section,
@@ -1234,14 +1234,14 @@
   .contact-section,
   .cta-section,
   .footer-section {
-    width: 400vw !important;
-    min-width: 400vw !important;
+    width: 357vw !important;
+    min-width: 357vw !important;
   }
 
   /* IMPROVE MENU BUTTON VISIBILITY */
   .menu-button {
-    background: rgba(255, 255, 255, 0.2) !important;
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
     border-radius: 4px !important;
     padding: 0.25rem 0.5rem !important;
     font-size: 10px !important;
